@@ -1,6 +1,7 @@
 
 import mcpi.minecraft as game
 import mcpi.block as blocks
+import mcpi.entity as entities
 import mcpi.event as event
 import time
 import Pyro4 as pyro
@@ -10,6 +11,7 @@ import Pyro4 as pyro
 # Connect to the Minecraft game
 mc = game.Minecraft.create()
 TNTBot = 1
+
 
 
 while (True):
@@ -27,8 +29,6 @@ while (True):
         pos = mc.player.getTilePos()
         floor = mc.getBlock(pos.x, pos.y-1, pos.z)
         if(floor != blocks.AIR.id and floor != blocks.WATER.id and floor != blocks.WATER_STATIONARY.id):
-            mc.setBlock(pos.x, pos.y, pos.z, blocks.TNT.id)
+            #mc.setBlock(pos.x, pos.y, pos.z, blocks.TNT.id)
             #mc.setBlock(pos.x, pos.y-1, pos.z, blocks.REDSTONE_BLOCK.id)
-            mc.summonEntity("tnt", pos.x, pos.y+1, pos.z)
-        
-        
+            mc.spawnEntity(pos.x, pos.y+1, pos.z, entities.PRIMED_TNT.id)

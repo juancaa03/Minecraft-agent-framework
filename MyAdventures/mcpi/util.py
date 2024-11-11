@@ -1,11 +1,9 @@
-try:
-    import collections.abc as collections
-except ImportError:
-    import collections as collections
+import collections.abc
+
 
 def flatten(l):
     for e in l:
-        if isinstance(e, collections.Iterable) and not isinstance(e, str):
+        if isinstance(e, collections.abc.Iterable) and not isinstance(e, str):
             for ee in flatten(e): yield ee
         else: yield e
 
@@ -14,8 +12,9 @@ def flatten_parameters_to_bytestring(l):
 
 def _misc_to_bytes(m):
     """
-    Convert an arbitrary object into a string encoded as a CP437 series of bytes.
+    Convert an arbitrary object into a string encoded as a UTF-8 series of bytes. 
 
     See `Connection.send` for more details.
     """
-    return str(m).encode("cp437")
+
+    return str(m).encode("UTF-8")
