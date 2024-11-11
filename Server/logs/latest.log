@@ -1,0 +1,315 @@
+[11:27:27] [Server thread/INFO]: Loading properties
+[11:27:27] [Server thread/INFO]: Default game type: CREATIVE
+[11:27:27] [Server thread/INFO]: Generating keypair
+[11:27:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:27:28] [Server thread/INFO]: Using default channel type
+[11:27:29] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[11:27:29] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
+[11:27:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:27:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:27:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:27:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:27:29] [Server thread/INFO]: Preparing level "world"
+[11:27:30] [Server thread/INFO]: Preparing start region for level 0 (Seed: 5218249269485073387)
+[11:27:31] [Server thread/INFO]: Preparing spawn area: 86%
+[11:27:31] [Server thread/INFO]: Preparing start region for level 1 (Seed: 5218249269485073387)
+[11:27:32] [Server thread/INFO]: Preparing start region for level 2 (Seed: 5218249269485073387)
+[11:27:32] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
+[11:27:32] [Server thread/INFO]: [RaspberryJuice] Using port 4711
+[11:27:32] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
+[11:27:32] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
+[11:27:32] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[11:27:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:27:32] [Server thread/INFO]: Done (2,568s)! For help, type "help" or "?"
+[11:28:12] [Server thread/INFO]: 73F4N[/127.0.0.1:63423] logged in with entity id 11 at ([world]-12.272247401794289, 78.0, 73.95161295817763)
+[11:28:28] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[11:28:28] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63468.
+[11:28:28] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[11:29:38] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63468.
+[11:29:48] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57475.
+[11:29:48] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[11:29:48] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[11:29:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57475.
+[11:33:15] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49617.
+[11:33:15] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[11:33:15] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[11:33:46] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49617.
+[11:33:48] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52847.
+[11:33:48] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[11:33:48] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[11:34:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52847.
+[11:34:20] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56812.
+[11:34:20] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
+[11:34:20] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
+[11:36:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56812.
+[11:50:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62609.
+[11:50:50] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
+[11:50:50] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
+[11:51:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62609.
+[11:51:05] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62618.
+[11:51:05] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
+[11:51:05] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
+[11:51:31] [Server thread/INFO]: 73F4N issued server command: /gamemode 0
+[11:51:31] [Server thread/INFO]: [73F4N: Set own game mode to Survival Mode]
+[11:51:43] [Server thread/INFO]: 73F4N blew up
+[11:51:48] [Server thread/INFO]: 73F4N issued server command: /gamemode 1
+[11:51:48] [Server thread/INFO]: [73F4N: Set own game mode to Creative Mode]
+[11:52:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62618.
+[11:53:29] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59929.
+[11:53:29] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
+[11:53:29] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
+[11:53:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59929.
+[12:04:15] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:58738.
+[12:04:15] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
+[12:04:15] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
+[12:04:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:58738.
+[12:05:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49158.
+[12:05:01] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
+[12:05:01] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
+[12:05:05] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49158.
+[12:05:13] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49164.
+[12:05:13] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
+[12:05:13] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
+[12:05:48] [Server thread/INFO]: 73F4N issued server command: /entity
+[12:05:51] [Server thread/INFO]: 73F4N issued server command: /help
+[12:05:58] [Server thread/INFO]: 73F4N issued server command: /help 2
+[12:06:07] [Server thread/INFO]: 73F4N issued server command: /blockdata
+[12:06:16] [Server thread/INFO]: 73F4N issued server command: /entitydata
+[12:06:19] [Server thread/INFO]: 73F4N issued server command: /entitydata tnt
+[12:06:21] [Server thread/INFO]: 73F4N issued server command: /entitydata tnt 1
+[12:06:21] [Server thread/INFO]: [73F4N: Entity 'tnt' cannot be found]
+[12:06:27] [Server thread/INFO]: 73F4N issued server command: /entitydata 152 1
+[12:06:27] [Server thread/INFO]: [73F4N: Entity '152' cannot be found]
+[12:06:42] [Server thread/INFO]: 73F4N issued server command: /help 3
+[12:06:47] [Server thread/INFO]: 73F4N issued server command: /help 4
+[12:06:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49164.
+[12:07:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52024.
+[12:07:03] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
+[12:07:03] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
+[12:07:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52024.
+[12:07:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51771.
+[12:07:18] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
+[12:07:18] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
+[12:09:32] [Server thread/INFO]: 73F4N issued server command: /summon PrimedTnt ~ ~ ~ {Fuse:80}
+[12:09:32] [Server thread/WARN]: Skipping Entity with id minecraft:primedtnt
+[12:09:32] [Server thread/INFO]: [73F4N: Unable to summon object]
+[12:09:39] [Server thread/INFO]: 73F4N issued server command: /summon primedtnt ~ ~ ~ {Fuse:80}
+[12:09:39] [Server thread/WARN]: Skipping Entity with id minecraft:primedtnt
+[12:09:39] [Server thread/INFO]: [73F4N: Unable to summon object]
+[12:09:45] [Server thread/INFO]: 73F4N issued server command: /summon tnt ~ ~ ~ {Fuse:80}
+[12:09:45] [Server thread/INFO]: [73F4N: Object successfully summoned]
+[12:11:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51771.
+[12:12:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49765.
+[12:12:51] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
+[12:12:51] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
+[12:12:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49765.
+[12:13:25] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50493.
+[12:13:25] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
+[12:13:25] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
+[12:13:31] [Server thread/INFO]: ./summon tnt -16 85 33[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -16 85 33[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -16 85 33[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -16 85 33[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -16 85 33[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -15 85 32[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -15 85 32[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -15 85 32[m
+[12:13:31] [Server thread/INFO]: ./summon tnt -15 85 32[m
+[12:13:37] [Server thread/INFO]: ./summon tnt -20 86 39[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -20 86 39[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -21 86 39[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -21 86 39[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -21 86 38[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -22 86 38[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -22 86 38[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -22 86 38[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -23 86 38[m
+[12:13:38] [Server thread/INFO]: ./summon tnt -23 86 38[m
+[12:20:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50493.
+[12:24:11] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52821.
+[12:24:11] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
+[12:24:11] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
+[12:24:20] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:24:27] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:24:56] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52821.
+[12:24:58] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64318.
+[12:24:58] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
+[12:24:58] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
+[12:25:01] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:25:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64318.
+[12:25:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52714.
+[12:25:19] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
+[12:25:19] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
+[12:25:22] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:25:22] [Server thread/INFO]: ChatEvent(ChatEvent.POST, 11, :enableTNT)[m
+[12:27:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52714.
+[12:27:25] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60492.
+[12:27:25] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
+[12:27:25] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
+[12:27:29] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:27:29] [Server thread/INFO]: :enableTNT[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:29] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:30] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:31] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:32] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:32] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:32] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:32] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:32] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:33] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:34] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:35] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:36] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:37] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:37] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:37] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:37] [Netty Server IO #2/INFO]: <73F4N> :disableTNT[m
+[12:27:37] [Server thread/INFO]: ./summon tnt -25 87 42[m
+[12:27:37] [Server thread/INFO]: :disableTNT[m
+[12:27:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60492.
+[12:27:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51849.
+[12:27:54] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
+[12:27:54] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
+[12:28:00] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:28:00] [Server thread/INFO]: :enableTNT[m
+[12:28:07] [Netty Server IO #2/INFO]: <73F4N> :disableTNT[m
+[12:28:07] [Server thread/INFO]: :disableTNT[m
+[12:31:27] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51849.
+[12:32:38] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49713.
+[12:32:38] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
+[12:32:38] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
+[12:33:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49713.
+[12:34:14] [Netty Server IO #2/INFO]: <73F4N> ./setBlock 247[m
+[12:34:19] [Server thread/INFO]: 73F4N issued server command: /setBlock 247
+[12:34:33] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ 247
+[12:34:33] [Server thread/INFO]: [73F4N: There is no such block with name minecraft:247]
+[12:35:04] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ minecraft:brown_glazed_terracotta
+[12:35:04] [Server thread/INFO]: [73F4N: Block placed]
+[12:35:33] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ minecraft:tnt 1
+[12:35:33] [Server thread/INFO]: [73F4N: Block placed]
+[12:35:37] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ minecraft:tnt 0
+[12:35:37] [Server thread/INFO]: [73F4N: Block placed]
+[12:35:41] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ minecraft:tnt 0
+[12:35:41] [Server thread/INFO]: [73F4N: Block placed]
+[12:38:05] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59459.
+[12:38:05] [Thread-50/INFO]: [RaspberryJuice] Starting output thread!
+[12:38:05] [Thread-49/INFO]: [RaspberryJuice] Starting input thread
+[12:38:14] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:38:14] [Server thread/INFO]: TNT Bot has been activated[m
+[12:38:16] [Server thread/INFO]: /summon tnt -34 88 33[m
+[12:38:16] [Server thread/INFO]: /summon tnt -34 88 33[m
+[12:38:17] [Server thread/INFO]: /summon tnt -34 88 32[m
+[12:38:17] [Server thread/INFO]: /summon tnt -34 88 32[m
+[12:38:17] [Server thread/INFO]: /summon tnt -34 88 32[m
+[12:38:17] [Server thread/INFO]: /summon tnt -33 88 32[m
+[12:38:17] [Server thread/INFO]: /summon tnt -33 88 33[m
+[12:38:17] [Server thread/INFO]: /summon tnt -34 88 33[m
+[12:38:17] [Server thread/INFO]: /summon tnt -34 88 33[m
+[12:38:18] [Server thread/INFO]: /summon tnt -35 88 33[m
+[12:41:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59459.
+[12:41:10] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55922.
+[12:41:10] [Thread-52/INFO]: [RaspberryJuice] Starting output thread!
+[12:41:10] [Thread-51/INFO]: [RaspberryJuice] Starting input thread
+[12:41:21] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:41:21] [Server thread/INFO]: TNT Bot has been activated[m
+[12:41:35] [Server thread/WARN]: [RaspberryJuice] summon is not supported.
+[12:41:35] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55922.
+[12:43:17] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56718.
+[12:43:17] [Thread-54/INFO]: [RaspberryJuice] Starting output thread!
+[12:43:17] [Thread-53/INFO]: [RaspberryJuice] Starting input thread
+[12:43:21] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:43:22] [Server thread/INFO]: TNT Bot has been activated[m
+[12:43:23] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[12:43:23] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56718.
+[12:43:47] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:56731.
+[12:43:47] [Thread-56/INFO]: [RaspberryJuice] Starting output thread!
+[12:43:47] [Thread-55/INFO]: [RaspberryJuice] Starting input thread
+[12:43:56] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:43:56] [Server thread/INFO]: TNT Bot has been activated[m
+[12:44:00] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[12:44:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:56731.
+[12:45:43] [Server thread/INFO]: 73F4N issued server command: /summon tnt ~ ~ ~
+[12:45:43] [Server thread/INFO]: [73F4N: Object successfully summoned]
+[12:45:49] [Server thread/INFO]: 73F4N issued server command: /summon tnt ~ ~ ~
+[12:45:49] [Server thread/INFO]: [73F4N: Object successfully summoned]
+[12:46:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55665.
+[12:46:51] [Thread-58/INFO]: [RaspberryJuice] Starting output thread!
+[12:46:51] [Thread-57/INFO]: [RaspberryJuice] Starting input thread
+[12:46:56] [Netty Server IO #2/INFO]: <73F4N> :enableTNT[m
+[12:46:56] [Server thread/INFO]: TNT Bot has been activated[m
+[12:46:58] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[12:46:58] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55665.
+[12:50:38] [Server thread/INFO]: 73F4N issued server command: /setBlock ~ ~ ~ tnt 1
+[12:50:38] [Server thread/INFO]: [73F4N: Block placed]
+[12:55:04] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65185.
+[12:55:04] [Thread-59/INFO]: [RaspberryJuice] Starting input thread
+[12:55:04] [Thread-60/INFO]: [RaspberryJuice] Starting output thread!
+[12:55:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65185.
+[12:55:56] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65195.
+[12:55:56] [Thread-61/INFO]: [RaspberryJuice] Starting input thread
+[12:55:56] [Thread-62/INFO]: [RaspberryJuice] Starting output thread!
+[12:55:59] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[12:55:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65195.
+[13:00:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59057.
+[13:00:50] [Thread-63/INFO]: [RaspberryJuice] Starting input thread
+[13:00:50] [Thread-64/INFO]: [RaspberryJuice] Starting output thread!
+[13:00:54] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[13:00:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59057.
+[13:03:34] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65266.
+[13:03:34] [Thread-66/INFO]: [RaspberryJuice] Starting output thread!
+[13:03:34] [Thread-65/INFO]: [RaspberryJuice] Starting input thread
+[13:03:37] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[13:03:37] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65266.
+[13:05:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:54828.
+[13:05:01] [Thread-68/INFO]: [RaspberryJuice] Starting output thread!
+[13:05:01] [Thread-67/INFO]: [RaspberryJuice] Starting input thread
+[13:05:04] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[13:05:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:54828.
+[13:07:06] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52467.
+[13:07:06] [Thread-69/INFO]: [RaspberryJuice] Starting input thread
+[13:07:06] [Thread-70/INFO]: [RaspberryJuice] Starting output thread!
+[13:07:11] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52467.
+[13:08:10] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59522.
+[13:08:10] [Thread-71/INFO]: [RaspberryJuice] Starting input thread
+[13:08:10] [Thread-72/INFO]: [RaspberryJuice] Starting output thread!
+[13:08:12] [Server thread/WARN]: [RaspberryJuice] world.summon is not supported.
+[13:08:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59522.
