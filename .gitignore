@@ -5,6 +5,5 @@
 *.a
 *.DS_Store
 *.md
-Server/
 
 !README.md
