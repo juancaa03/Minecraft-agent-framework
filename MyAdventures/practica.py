@@ -8,12 +8,11 @@ import botclass as bots
 mc = game.Minecraft.create()
 Script = 1
 
-TNTBot = bots.TNT()
-
 while(Script):
     chatEvents = mc.events.pollChatPosts()
     for command in chatEvents:
         if (command.message == ":enableTNT"):
+            TNTBot = bots.TNT()
             TNTBot.begin()
             
         elif (command.message == ":disableTNT"):

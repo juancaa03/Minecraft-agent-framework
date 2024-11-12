@@ -17,6 +17,7 @@ class Bot:
         if(not self.t1.is_alive()):
             self.control = True
             self.t1.start()
+            self.mc.postToChat("***The bot has been enabled!!")
         else:
             self.mc.postToChat("***The bot is already running!!")
     
