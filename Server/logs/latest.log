@@ -1,33 +1,920 @@
-[20:22:48] [Server thread/INFO]: Starting minecraft server version 1.12
-[20:22:48] [Server thread/INFO]: Loading properties
-[20:22:48] [Server thread/INFO]: Default game type: CREATIVE
-[20:22:48] [Server thread/INFO]: Generating keypair
-[20:22:48] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:22:48] [Server thread/INFO]: Using default channel type
-[20:22:50] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[20:22:50] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
-[20:22:50] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:22:50] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:22:50] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:22:50] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:22:50] [Server thread/INFO]: Preparing level "world"
-[20:22:50] [Server thread/INFO]: Preparing start region for level 0 (Seed: 5218249269485073387)
-[20:22:51] [Server thread/INFO]: Preparing spawn area: 92%
-[20:22:51] [Server thread/INFO]: Preparing start region for level 1 (Seed: 5218249269485073387)
-[20:22:52] [Server thread/INFO]: Preparing start region for level 2 (Seed: 5218249269485073387)
-[20:22:52] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
-[20:22:52] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
-[20:22:52] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
-[20:22:52] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
-[20:22:52] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[20:22:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:22:52] [Server thread/INFO]: Done (2,311s)! For help, type "help" or "?"
-[20:22:56] [Server thread/INFO]: Stopping the server
-[20:22:56] [Server thread/INFO]: Stopping server
-[20:22:56] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
-[20:22:56] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
-[20:22:56] [Server thread/INFO]: Saving players
-[20:22:56] [Server thread/INFO]: Saving worlds
-[20:22:56] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[20:22:57] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[20:22:57] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[21:24:37] [Server thread/INFO]: Starting minecraft server version 1.12
+[21:24:37] [Server thread/INFO]: Loading properties
+[21:24:37] [Server thread/INFO]: Default game type: CREATIVE
+[21:24:37] [Server thread/INFO]: Generating keypair
+[21:24:37] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:24:37] [Server thread/INFO]: Using default channel type
+[21:24:38] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
+[21:24:38] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.12.1
+[21:24:38] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:24:38] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:24:38] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:24:38] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:24:38] [Server thread/INFO]: Preparing level "world"
+[21:24:38] [Server thread/INFO]: Preparing start region for level 0 (Seed: 5218249269485073387)
+[21:24:39] [Server thread/INFO]: Preparing start region for level 1 (Seed: 5218249269485073387)
+[21:24:39] [Server thread/INFO]: Preparing start region for level 2 (Seed: 5218249269485073387)
+[21:24:39] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.12.1
+[21:24:39] [Server thread/INFO]: [RaspberryJuice] Using host:port - 0.0.0.0:4711
+[21:24:39] [Server thread/INFO]: [RaspberryJuice] Using RELATIVE locations
+[21:24:39] [Server thread/INFO]: [RaspberryJuice] Using RIGHT clicks for hits
+[21:24:39] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[21:24:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:24:39] [Server thread/INFO]: Done (1.430s)! For help, type "help" or "?"
+[21:24:42] [Server thread/INFO]: Welcome 73F4N[m
+[21:24:42] [Server thread/INFO]: 73F4N[/127.0.0.1:59849] logged in with entity id 215 at ([world]40.50089407673008, 76.79432729882811, 133.5368108373616)
+[21:24:54] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[21:24:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59855.
+[21:24:54] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[21:24:54] [Server thread/INFO]: ***Main program has started!!***[m
+[21:25:03] [Netty Server IO #1/INFO]: <73F4N> :enableTNT[m
+[21:25:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59864.
+[21:25:03] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[21:25:03] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[21:25:03] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:25:30] [Netty Server IO #1/INFO]: <73F4N> :disableTNT[m
+[21:25:30] [Server thread/INFO]: ***The bot has been disabled!!***[m
+[21:25:55] [Netty Server IO #1/INFO]: <73F4N> :endProgram[m
+[21:25:55] [Server thread/INFO]: ***Ended execution of main program!!***[m
+[21:25:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59855.
+[21:25:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59864.
+[21:27:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64196.
+[21:27:03] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[21:27:03] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[21:27:03] [Server thread/INFO]: ***Main program has started!!***[m
+[21:27:09] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:27:14] [Netty Server IO #1/INFO]: <73F4N> :enableTNT[m
+[21:27:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64196.
+[21:31:59] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57753.
+[21:31:59] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[21:31:59] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[21:31:59] [Server thread/INFO]: ***Main program has started!!***[m
+[21:32:07] [Netty Server IO #1/INFO]: <73F4N> :enabLEtnt[m
+[21:32:07] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57761.
+[21:32:07] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
+[21:32:07] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
+[21:32:07] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:32:37] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:32:37] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53677.
+[21:32:37] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
+[21:32:37] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
+[21:32:37] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:32:59] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:32:59] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53687.
+[21:32:59] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
+[21:32:59] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
+[21:32:59] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:33:05] [Netty Server IO #1/INFO]: <73F4N> :disableTNT[m
+[21:33:05] [Server thread/INFO]: ***The bot has been disabled!!***[m
+[21:33:12] [Netty Server IO #1/INFO]: <73F4N> :disableTNT[m
+[21:33:12] [Server thread/INFO]: ***The bot is not running yet!!***[m
+[21:33:39] [Netty Server IO #1/INFO]: <73F4N> :endProgram[m
+[21:33:39] [Server thread/INFO]: ***Ended execution of main program!!***[m
+[21:33:45] [Thread-15/INFO]: [RaspberryJuice] Connection reset
+[21:33:45] [Thread-19/INFO]: [RaspberryJuice] Connection reset
+[21:33:45] [Thread-13/INFO]: [RaspberryJuice] Connection reset
+[21:33:45] [Thread-17/INFO]: [RaspberryJuice] Connection reset
+[21:33:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57753.
+[21:33:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57761.
+[21:33:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53677.
+[21:33:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53687.
+[21:36:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53788.
+[21:36:46] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
+[21:36:46] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
+[21:36:46] [Server thread/INFO]: ***Main program has started!!***[m
+[21:36:51] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:36:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53788.
+[21:38:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59511.
+[21:38:01] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
+[21:38:01] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
+[21:38:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59512.
+[21:38:01] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
+[21:38:01] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
+[21:38:01] [Server thread/INFO]: ***Main program has started!!***[m
+[21:38:06] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:38:06] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:38:17] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:38:17] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62736.
+[21:38:17] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
+[21:38:17] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
+[21:38:17] [Server thread/INFO]: ***The bot has been disabled!!***[m
+[21:38:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59512.
+[21:38:23] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:38:23] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:38:32] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:38:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62743.
+[21:38:32] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
+[21:38:32] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
+[21:38:32] [Server thread/INFO]: ***The bot has been disabled!!***[m
+[21:38:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62736.
+[21:38:40] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:38:40] [Server thread/INFO]: ***The bot has been enabled!!***[m
+[21:39:50] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:39:50] [Server thread/INFO]: ***Ended execution of main program!!***[m
+[21:40:03] [Thread-29/INFO]: [RaspberryJuice] Connection reset
+[21:40:03] [Thread-23/INFO]: [RaspberryJuice] Connection reset
+[21:40:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59511.
+[21:40:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62743.
+[21:41:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62823.
+[21:41:16] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
+[21:41:16] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
+[21:41:16] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62824.
+[21:41:16] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
+[21:41:16] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
+[21:41:16] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[21:41:26] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:41:26] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[21:41:39] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:41:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:58803.
+[21:41:39] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
+[21:41:39] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
+[21:41:39] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[21:41:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62824.
+[21:42:10] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:42:10] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[21:42:10] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62823.
+[21:42:10] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:58803.
+[21:46:21] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59048.
+[21:46:21] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
+[21:46:21] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
+[21:46:21] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59048.
+[21:46:49] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62401.
+[21:46:49] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
+[21:46:49] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
+[21:46:49] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62401.
+[21:47:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62407.
+[21:47:03] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
+[21:47:03] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
+[21:47:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:62408.
+[21:47:03] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
+[21:47:03] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
+[21:47:03] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[21:47:10] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:47:10] [Server thread/INFO]: <TNTBot>***The bot has been enabled!!***[m
+[21:47:18] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:47:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64014.
+[21:47:18] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
+[21:47:18] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
+[21:47:18] [Server thread/INFO]: <TNTBot>***The bot has been disabled!!***[m
+[21:47:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62408.
+[21:47:38] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:47:38] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[21:47:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:62407.
+[21:47:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64014.
+[21:49:29] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64078.
+[21:49:29] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
+[21:49:29] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
+[21:49:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64078.
+[21:49:41] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64084.
+[21:49:41] [Thread-49/INFO]: [RaspberryJuice] Starting input thread
+[21:49:41] [Thread-50/INFO]: [RaspberryJuice] Starting output thread!
+[21:49:41] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:64085.
+[21:49:41] [Thread-51/INFO]: [RaspberryJuice] Starting input thread
+[21:49:41] [Thread-52/INFO]: [RaspberryJuice] Starting output thread!
+[21:49:41] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[21:49:48] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:49:48] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[21:49:57] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:49:57] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60491.
+[21:49:57] [Thread-53/INFO]: [RaspberryJuice] Starting input thread
+[21:49:57] [Thread-54/INFO]: [RaspberryJuice] Starting output thread!
+[21:49:57] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[21:49:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64085.
+[21:50:05] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:50:05] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[21:50:11] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:50:11] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60500.
+[21:50:11] [Thread-56/INFO]: [RaspberryJuice] Starting output thread!
+[21:50:11] [Thread-55/INFO]: [RaspberryJuice] Starting input thread
+[21:50:11] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[21:50:11] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60491.
+[21:50:16] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:50:16] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[21:50:16] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:64084.
+[21:50:16] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60500.
+[21:52:40] [Server thread/INFO]: 73F4N has made the advancement [Monster Hunter]
+[21:53:18] [Server thread/INFO]: Welcome Gaarrincha[m
+[21:53:18] [Server thread/INFO]: Gaarrincha[/83.42.221.130:59709] logged in with entity id 13454 at ([world]14.568555350519729, 79.0, 27.25424279992754)
+[21:53:32] [Server thread/INFO]: 73F4N issued server command: /tp Gaarrincha 73F4N
+[21:53:32] [Server thread/INFO]: [73F4N: Teleported Gaarrincha to 73F4N]
+[21:53:37] [Server thread/INFO]: 73F4N issued server command: /gamemode 1 Gaarrincha
+[21:53:37] [Server thread/INFO]: [73F4N: Set Gaarrincha's game mode to Creative Mode]
+[21:53:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60585.
+[21:53:50] [Thread-57/INFO]: [RaspberryJuice] Starting input thread
+[21:53:50] [Thread-58/INFO]: [RaspberryJuice] Starting output thread!
+[21:53:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60586.
+[21:53:50] [Thread-59/INFO]: [RaspberryJuice] Starting input thread
+[21:53:50] [Thread-60/INFO]: [RaspberryJuice] Starting output thread!
+[21:53:50] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[21:53:56] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[21:53:56] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[21:54:28] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[21:54:28] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60063.
+[21:54:28] [Thread-61/INFO]: [RaspberryJuice] Starting input thread
+[21:54:28] [Thread-62/INFO]: [RaspberryJuice] Starting output thread!
+[21:54:28] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[21:54:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60586.
+[21:54:36] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:54:36] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[21:54:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60585.
+[21:54:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60063.
+[21:54:39] [Netty Server IO #5/INFO]: <Gaarrincha> :enabletnt[m
+[21:55:07] [Netty Server IO #5/INFO]: <Gaarrincha> :enabletnt[m
+[21:55:31] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57377.
+[21:55:31] [Thread-63/INFO]: [RaspberryJuice] Starting input thread
+[21:55:31] [Thread-64/INFO]: [RaspberryJuice] Starting output thread!
+[21:55:31] [Thread-66/INFO]: [RaspberryJuice] Starting output thread!
+[21:55:31] [Thread-65/INFO]: [RaspberryJuice] Starting input thread
+[21:55:31] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57378.
+[21:55:31] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[21:55:40] [Netty Server IO #5/INFO]: <Gaarrincha> :enabletnt[m
+[21:55:40] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[21:56:04] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[21:56:04] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[22:05:18] [Thread-65/INFO]: [RaspberryJuice] Connection reset
+[22:05:18] [Thread-63/INFO]: [RaspberryJuice] Connection reset
+[22:05:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57377.
+[22:05:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57378.
+[22:05:20] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:57980.
+[22:05:20] [Thread-67/INFO]: [RaspberryJuice] Starting input thread
+[22:05:20] [Thread-68/INFO]: [RaspberryJuice] Starting output thread!
+[22:05:20] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:05:27] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:05:27] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:57980.
+[22:05:41] [Server thread/INFO]: Gaarrincha lost connection: Internal Exception: java.io.IOException: An existing connection was forcibly closed by the remote host
+[22:05:41] [Server thread/INFO]: Gaarrincha left the game
+[22:05:55] [Server thread/INFO]: Welcome Gaarrincha[m
+[22:05:55] [Server thread/INFO]: Gaarrincha[/83.42.221.130:53050] logged in with entity id 20987 at ([world]-51.384477117882064, 60.0, 136.84084016092547)
+[22:06:15] [Server thread/INFO]: Gaarrincha has made the advancement [Ice Bucket Challenge]
+[22:07:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55597.
+[22:07:39] [Thread-69/INFO]: [RaspberryJuice] Starting input thread
+[22:07:39] [Thread-70/INFO]: [RaspberryJuice] Starting output thread!
+[22:07:39] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:07:51] [Netty Server IO #7/INFO]: <Gaarrincha> :enabletnt[m
+[22:07:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55602.
+[22:07:51] [Thread-71/INFO]: [RaspberryJuice] Starting input thread
+[22:07:51] [Thread-72/INFO]: [RaspberryJuice] Starting output thread!
+[22:07:51] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[22:08:07] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:08:08] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[22:08:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55602.
+[22:08:15] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:08:15] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52644.
+[22:08:15] [Thread-74/INFO]: [RaspberryJuice] Starting output thread!
+[22:08:15] [Thread-73/INFO]: [RaspberryJuice] Starting input thread
+[22:08:15] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[22:08:24] [Netty Server IO #7/INFO]: <Gaarrincha> :enabletnt[m
+[22:08:24] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52649.
+[22:08:24] [Thread-76/INFO]: [RaspberryJuice] Starting output thread!
+[22:08:24] [Thread-75/INFO]: [RaspberryJuice] Starting input thread
+[22:08:24] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[22:08:36] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:08:36] [Server thread/INFO]: <TNTBot> ***The bot has been disabled!!***[m
+[22:08:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52649.
+[22:09:00] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:09:05] [Netty Server IO #7/INFO]: <Gaarrincha> :enabletnt[m
+[22:32:26] [Thread-73/INFO]: [RaspberryJuice] Connection reset
+[22:32:26] [Thread-69/INFO]: [RaspberryJuice] Connection reset
+[22:32:26] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55597.
+[22:32:26] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52644.
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53436.
+[22:33:50] [Thread-77/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-78/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53437.
+[22:33:50] [Thread-80/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-79/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53438.
+[22:33:50] [Thread-81/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-82/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53440.
+[22:33:50] [Thread-83/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-84/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53441.
+[22:33:50] [Thread-85/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-86/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53442.
+[22:33:50] [Thread-87/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-88/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53443.
+[22:33:50] [Thread-89/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-90/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53444.
+[22:33:50] [Thread-92/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-91/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53445.
+[22:33:50] [Thread-93/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-94/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53446.
+[22:33:50] [Thread-95/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-96/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53447.
+[22:33:50] [Thread-97/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-98/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53448.
+[22:33:50] [Thread-100/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-99/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53449.
+[22:33:50] [Thread-101/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-102/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53437.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53438.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53440.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53441.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53442.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53443.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53444.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53445.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53446.
+[22:33:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53447.
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53450.
+[22:33:50] [Thread-103/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-104/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:50] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53451.
+[22:33:50] [Thread-105/INFO]: [RaspberryJuice] Starting input thread
+[22:33:50] [Thread-106/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53452.
+[22:33:51] [Thread-107/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-108/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53453.
+[22:33:51] [Thread-109/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-110/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53454.
+[22:33:51] [Thread-112/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-111/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53455.
+[22:33:51] [Thread-113/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-114/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53456.
+[22:33:51] [Thread-116/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-115/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53457.
+[22:33:51] [Thread-117/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-118/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53458.
+[22:33:51] [Thread-119/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-120/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-121/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53459.
+[22:33:51] [Thread-122/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53460.
+[22:33:51] [Thread-123/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-124/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53461.
+[22:33:51] [Thread-125/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-126/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53462.
+[22:33:51] [Thread-127/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-128/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53463.
+[22:33:51] [Thread-129/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-130/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53464.
+[22:33:51] [Thread-131/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-132/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53465.
+[22:33:51] [Thread-133/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-134/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53466.
+[22:33:51] [Thread-136/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-135/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53467.
+[22:33:51] [Thread-137/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-138/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-139/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-140/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53468.
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53469.
+[22:33:51] [Thread-141/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-142/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-143/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-144/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53470.
+[22:33:51] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53471.
+[22:33:51] [Thread-145/INFO]: [RaspberryJuice] Starting input thread
+[22:33:51] [Thread-146/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53450.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53451.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53452.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53453.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53454.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53455.
+[22:33:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53456.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53457.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53458.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53459.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53460.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53461.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53462.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53463.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53464.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53465.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53466.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53467.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53468.
+[22:33:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53469.
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53472.
+[22:33:52] [Thread-147/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-148/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53473.
+[22:33:52] [Thread-149/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-150/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53474.
+[22:33:52] [Thread-151/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-152/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53475.
+[22:33:52] [Thread-153/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-154/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53476.
+[22:33:52] [Thread-155/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-156/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53477.
+[22:33:52] [Thread-157/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-158/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53478.
+[22:33:52] [Thread-159/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-160/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53479.
+[22:33:52] [Thread-161/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-162/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53480.
+[22:33:52] [Thread-164/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-163/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53481.
+[22:33:52] [Thread-165/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-166/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53482.
+[22:33:52] [Thread-167/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-168/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-169/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53483.
+[22:33:52] [Thread-170/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53484.
+[22:33:52] [Thread-172/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-171/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53485.
+[22:33:52] [Thread-173/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-174/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53486.
+[22:33:52] [Thread-175/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-176/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53487.
+[22:33:52] [Thread-177/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-178/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53488.
+[22:33:52] [Thread-179/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-180/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53489.
+[22:33:52] [Thread-181/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-182/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53490.
+[22:33:52] [Thread-184/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:52] [Thread-183/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53491.
+[22:33:52] [Thread-185/INFO]: [RaspberryJuice] Starting input thread
+[22:33:52] [Thread-186/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53492.
+[22:33:53] [Thread-187/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-188/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53493.
+[22:33:53] [Thread-189/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-190/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53494.
+[22:33:53] [Thread-192/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-191/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53495.
+[22:33:53] [Thread-193/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-194/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53472.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53473.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53474.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53475.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53476.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53477.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53478.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53479.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53480.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53481.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53482.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53483.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53484.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53485.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53486.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53487.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53488.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53489.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53490.
+[22:33:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53491.
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53496.
+[22:33:53] [Thread-196/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-195/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53497.
+[22:33:53] [Thread-197/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-198/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53498.
+[22:33:53] [Thread-199/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-200/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53499.
+[22:33:53] [Thread-201/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-202/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53501.
+[22:33:53] [Thread-203/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-204/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53502.
+[22:33:53] [Thread-205/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-206/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53503.
+[22:33:53] [Thread-207/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-208/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53504.
+[22:33:53] [Thread-209/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-210/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53505.
+[22:33:53] [Thread-211/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-212/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53506.
+[22:33:53] [Thread-213/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-214/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53507.
+[22:33:53] [Thread-215/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-216/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53508.
+[22:33:53] [Thread-217/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-218/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53509.
+[22:33:53] [Thread-220/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-219/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53510.
+[22:33:53] [Thread-221/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-222/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53511.
+[22:33:53] [Thread-224/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-223/INFO]: [RaspberryJuice] Starting input thread
+[22:33:53] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53512.
+[22:33:53] [Thread-226/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:53] [Thread-225/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53513.
+[22:33:54] [Thread-228/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-227/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53514.
+[22:33:54] [Thread-229/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-230/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53515.
+[22:33:54] [Thread-231/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-232/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53516.
+[22:33:54] [Thread-233/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-234/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53517.
+[22:33:54] [Thread-235/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-236/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-237/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53518.
+[22:33:54] [Thread-238/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53495.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53496.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53497.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53498.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53499.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53501.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53502.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53503.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53504.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53505.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53506.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53507.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53508.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53509.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53510.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53511.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53512.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53513.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53514.
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53519.
+[22:33:54] [Thread-240/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-239/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53520.
+[22:33:54] [Thread-241/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-242/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53521.
+[22:33:54] [Thread-243/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-244/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53522.
+[22:33:54] [Thread-245/INFO]: [RaspberryJuice] Starting input thread
+[22:33:54] [Thread-246/INFO]: [RaspberryJuice] Starting output thread!
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53436.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53448.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53449.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53470.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53471.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53492.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53493.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53494.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53515.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53516.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53517.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53518.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53519.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53520.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53521.
+[22:33:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53522.
+[22:36:25] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51109.
+[22:36:25] [Thread-247/INFO]: [RaspberryJuice] Starting input thread
+[22:36:25] [Thread-248/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:25] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:36:31] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:36:31] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51116.
+[22:36:31] [Thread-249/INFO]: [RaspberryJuice] Starting input thread
+[22:36:31] [Thread-250/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:31] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51117.
+[22:36:31] [Thread-251/INFO]: [RaspberryJuice] Starting input thread
+[22:36:31] [Thread-252/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:31] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[22:36:46] [Netty Server IO #7/INFO]: <Gaarrincha> :enabletnt[m
+[22:36:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51294.
+[22:36:46] [Thread-253/INFO]: [RaspberryJuice] Starting input thread
+[22:36:46] [Thread-254/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51295.
+[22:36:46] [Thread-255/INFO]: [RaspberryJuice] Starting input thread
+[22:36:46] [Thread-256/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:46] [Server thread/INFO]: <TNTBot> ***The bot has been enabled!!***[m
+[22:36:54] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:36:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51298.
+[22:36:54] [Thread-258/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:54] [Thread-257/INFO]: [RaspberryJuice] Starting input thread
+[22:36:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51299.
+[22:36:54] [Thread-259/INFO]: [RaspberryJuice] Starting input thread
+[22:36:54] [Thread-260/INFO]: [RaspberryJuice] Starting output thread!
+[22:36:54] [Server thread/INFO]: <TNTBot> ***The bot is not running yet!!***[m
+[22:37:04] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:37:04] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51304.
+[22:37:04] [Thread-261/INFO]: [RaspberryJuice] Starting input thread
+[22:37:04] [Thread-262/INFO]: [RaspberryJuice] Starting output thread!
+[22:37:04] [Thread-263/INFO]: [RaspberryJuice] Starting input thread
+[22:37:04] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51305.
+[22:37:04] [Thread-264/INFO]: [RaspberryJuice] Starting output thread!
+[22:37:04] [Server thread/INFO]: <TNTBot> ***The bot is not running yet!!***[m
+[22:37:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51117.
+[22:37:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51294.
+[22:37:04] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51298.
+[22:37:19] [Netty Server IO #7/INFO]: <Gaarrincha> :disabletnt[m
+[22:37:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51311.
+[22:37:19] [Thread-265/INFO]: [RaspberryJuice] Starting input thread
+[22:37:19] [Thread-266/INFO]: [RaspberryJuice] Starting output thread!
+[22:37:19] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51312.
+[22:37:19] [Thread-267/INFO]: [RaspberryJuice] Starting input thread
+[22:37:19] [Thread-268/INFO]: [RaspberryJuice] Starting output thread!
+[22:37:19] [Server thread/INFO]: <TNTBot> ***The bot is not running yet!!***[m
+[22:37:26] [Server thread/INFO]: Gaarrincha has made the advancement [Stone Age]
+[22:37:30] [Server thread/INFO]: Gaarrincha lost connection: Disconnected
+[22:37:30] [Server thread/INFO]: Gaarrincha left the game
+[22:37:30] [Server thread/INFO]: [RaspberryJuice] Entity [20987] not found.
+[22:37:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51295.
+[22:37:52] [Thread-261/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-247/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-263/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-249/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-259/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-267/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Thread-265/INFO]: [RaspberryJuice] Connection reset
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51109.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51116.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51299.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51304.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51305.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51311.
+[22:37:52] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51312.
+[22:52:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51736.
+[22:52:18] [Thread-269/INFO]: [RaspberryJuice] Starting input thread
+[22:52:18] [Thread-270/INFO]: [RaspberryJuice] Starting output thread!
+[22:52:18] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:51737.
+[22:52:18] [Thread-271/INFO]: [RaspberryJuice] Starting input thread
+[22:52:18] [Thread-272/INFO]: [RaspberryJuice] Starting output thread!
+[22:52:18] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:52:26] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:52:26] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 215!!***[m
+[22:52:39] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:52:39] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 215!!***[m
+[22:52:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51737.
+[22:52:44] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:52:44] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:51736.
+[22:53:23] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59314.
+[22:53:23] [Thread-273/INFO]: [RaspberryJuice] Starting input thread
+[22:53:23] [Thread-274/INFO]: [RaspberryJuice] Starting output thread!
+[22:53:23] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59315.
+[22:53:23] [Thread-275/INFO]: [RaspberryJuice] Starting input thread
+[22:53:23] [Thread-276/INFO]: [RaspberryJuice] Starting output thread!
+[22:53:23] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:53:27] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:53:27] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 215!!***[m
+[22:53:33] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:53:33] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:59323.
+[22:53:33] [Thread-278/INFO]: [RaspberryJuice] Starting output thread!
+[22:53:33] [Thread-277/INFO]: [RaspberryJuice] Starting input thread
+[22:53:33] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 215!!***[m
+[22:53:33] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59315.
+[22:53:38] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:53:38] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 215!!***[m
+[22:53:43] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:53:43] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53766.
+[22:53:43] [Thread-280/INFO]: [RaspberryJuice] Starting output thread!
+[22:53:43] [Thread-279/INFO]: [RaspberryJuice] Starting input thread
+[22:53:43] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 215!!***[m
+[22:53:43] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59323.
+[22:53:47] [Netty Server IO #1/INFO]: <73F4N> :enabletnt[m
+[22:53:48] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 215!!***[m
+[22:53:54] [Netty Server IO #1/INFO]: <73F4N> :disabletnt[m
+[22:53:54] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53771.
+[22:53:54] [Thread-281/INFO]: [RaspberryJuice] Starting input thread
+[22:53:54] [Thread-282/INFO]: [RaspberryJuice] Starting output thread!
+[22:53:54] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 215!!***[m
+[22:53:54] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53766.
+[22:53:59] [Netty Server IO #1/INFO]: <73F4N> :endprogram[m
+[22:53:59] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[22:53:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:59314.
+[22:53:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53771.
+[22:55:25] [Server thread/INFO]: 73F4N issued server command: /getplayerid 73F4N
+[22:55:35] [Server thread/INFO]: 73F4N issued server command: /getPlayerId 73F4N
+[22:55:38] [Server thread/INFO]: 73F4N issued server command: /help
+[22:55:49] [Server thread/INFO]: 73F4N issued server command: /help aliases
+[22:56:07] [Server thread/INFO]: 73F4N issued server command: /help 2
+[22:56:18] [Server thread/INFO]: 73F4N issued server command: /entitydata
+[22:56:22] [Server thread/INFO]: 73F4N issued server command: /entitydata 215
+[22:56:24] [Server thread/INFO]: 73F4N issued server command: /entitydata 215 º
+[22:56:24] [Server thread/INFO]: [73F4N: Entity '215' cannot be found]
+[22:56:27] [Server thread/INFO]: 73F4N issued server command: /entitydata 215 2
+[22:56:27] [Server thread/INFO]: [73F4N: Entity '215' cannot be found]
+[22:58:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53875.
+[22:58:03] [Thread-283/INFO]: [RaspberryJuice] Starting input thread
+[22:58:03] [Thread-284/INFO]: [RaspberryJuice] Starting output thread!
+[22:58:03] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53876.
+[22:58:03] [Thread-285/INFO]: [RaspberryJuice] Starting input thread
+[22:58:03] [Thread-286/INFO]: [RaspberryJuice] Starting output thread!
+[22:58:03] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[22:58:06] [Server thread/INFO]: 73F4N lost connection: Disconnected
+[22:58:06] [Server thread/INFO]: 73F4N left the game
+[22:58:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53875.
+[22:58:07] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53876.
+[22:58:15] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:53886.
+[22:58:15] [Thread-287/INFO]: [RaspberryJuice] Starting input thread
+[22:58:15] [Thread-288/INFO]: [RaspberryJuice] Starting output thread!
+[22:58:16] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:53886.
+[22:59:37] [Server thread/INFO]: Welcome 73F4N[m
+[22:59:37] [Server thread/INFO]: 73F4N[/127.0.0.1:55375] logged in with entity id 41279 at ([world]-62.35906159687365, 66.1133680342912, 140.1894147188444)
+[23:00:42] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55412.
+[23:00:42] [Thread-289/INFO]: [RaspberryJuice] Starting input thread
+[23:00:42] [Thread-290/INFO]: [RaspberryJuice] Starting output thread!
+[23:00:42] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55413.
+[23:00:42] [Thread-292/INFO]: [RaspberryJuice] Starting output thread!
+[23:00:42] [Thread-291/INFO]: [RaspberryJuice] Starting input thread
+[23:00:42] [Server thread/INFO]: <MAIN> ***Main program has started!!***[m
+[23:00:52] [Netty Server IO #11/INFO]: <73F4N> :enabletnt[m
+[23:00:53] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 41279!!***[m
+[23:01:01] [Netty Server IO #11/INFO]: <73F4N> :disabletnt[m
+[23:01:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49251.
+[23:01:01] [Thread-293/INFO]: [RaspberryJuice] Starting input thread
+[23:01:01] [Thread-294/INFO]: [RaspberryJuice] Starting output thread!
+[23:01:01] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 41279!!***[m
+[23:01:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55413.
+[23:01:52] [Netty Server IO #11/INFO]: <73F4N> :enabletnt[m
+[23:01:53] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 41279!!***[m
+[23:01:57] [Netty Server IO #11/INFO]: <73F4N> :enabletnt[m
+[23:01:57] [Server thread/INFO]: <TNTBot> ***The bot is already running for player 41279!!***[m
+[23:02:05] [Netty Server IO #11/INFO]: <73F4N> :disabletnt[m
+[23:02:05] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49283.
+[23:02:05] [Thread-296/INFO]: [RaspberryJuice] Starting output thread!
+[23:02:05] [Thread-295/INFO]: [RaspberryJuice] Starting input thread
+[23:02:05] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 41279!!***[m
+[23:02:05] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49251.
+[23:02:09] [Netty Server IO #11/INFO]: <73F4N> :disabletnt[m
+[23:02:09] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49289.
+[23:02:09] [Thread-297/INFO]: [RaspberryJuice] Starting input thread
+[23:02:09] [Thread-298/INFO]: [RaspberryJuice] Starting output thread!
+[23:02:09] [Server thread/INFO]: <TNTBot> ***The bot is not running yet for player 41279!!***[m
+[23:02:18] [Netty Server IO #11/INFO]: <73F4N> :enabletnt[m
+[23:02:18] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player 41279!!***[m
+[23:02:37] [Netty Server IO #11/INFO]: <73F4N> :disabletnt[m
+[23:02:37] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49300.
+[23:02:37] [Thread-299/INFO]: [RaspberryJuice] Starting input thread
+[23:02:37] [Thread-300/INFO]: [RaspberryJuice] Starting output thread!
+[23:02:37] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player 41279!!***[m
+[23:02:37] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49289.
+[23:02:58] [Netty Server IO #11/INFO]: <73F4N> :endprogram[m
+[23:02:59] [Server thread/INFO]: <MAIN> ***Ended execution of main program!!***[m
+[23:02:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55412.
+[23:02:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49283.
+[23:02:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49300.
+[23:04:00] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49342.
+[23:04:00] [Thread-301/INFO]: [RaspberryJuice] Starting input thread
+[23:04:00] [Thread-302/INFO]: [RaspberryJuice] Starting output thread!
+[23:04:01] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:49343.
+[23:04:01] [Thread-304/INFO]: [RaspberryJuice] Starting output thread!
+[23:04:01] [Thread-303/INFO]: [RaspberryJuice] Starting input thread
+[23:04:01] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:04:23] [Netty Server IO #11/INFO]: <73F4N> :endprogram[m
+[23:04:24] [Server thread/INFO]: <MAIN> ***Ended execution of main program!![m
+[23:04:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49342.
+[23:04:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:49343.
+[23:04:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63303.
+[23:04:46] [Thread-305/INFO]: [RaspberryJuice] Starting input thread
+[23:04:46] [Thread-306/INFO]: [RaspberryJuice] Starting output thread!
+[23:04:46] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63304.
+[23:04:46] [Thread-307/INFO]: [RaspberryJuice] Starting input thread
+[23:04:46] [Thread-308/INFO]: [RaspberryJuice] Starting output thread!
+[23:04:46] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:04:57] [Server thread/INFO]: 73F4N lost connection: Disconnected
+[23:04:57] [Server thread/INFO]: 73F4N left the game
+[23:04:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63303.
+[23:04:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63304.
+[23:05:10] [Server thread/INFO]: Welcome 73F4N[m
+[23:05:10] [Server thread/INFO]: 73F4N[/127.0.0.1:63486] logged in with entity id 44984 at ([world]-53.507060220032876, 67.66324896403174, 96.38550109584662)
+[23:05:14] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63490.
+[23:05:14] [Thread-310/INFO]: [RaspberryJuice] Starting output thread!
+[23:05:14] [Thread-309/INFO]: [RaspberryJuice] Starting input thread
+[23:05:14] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63491.
+[23:05:14] [Thread-311/INFO]: [RaspberryJuice] Starting input thread
+[23:05:14] [Thread-312/INFO]: [RaspberryJuice] Starting output thread!
+[23:05:14] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:05:21] [Netty Server IO #13/INFO]: <73F4N> :endprogram[m
+[23:05:21] [Server thread/INFO]: <MAIN> ***Ended execution of main program!![m
+[23:05:21] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63490.
+[23:05:21] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63491.
+[23:16:10] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63478.
+[23:16:10] [Thread-313/INFO]: [RaspberryJuice] Starting input thread
+[23:16:10] [Thread-314/INFO]: [RaspberryJuice] Starting output thread!
+[23:16:10] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:63479.
+[23:16:10] [Thread-315/INFO]: [RaspberryJuice] Starting input thread
+[23:16:10] [Thread-316/INFO]: [RaspberryJuice] Starting output thread!
+[23:16:10] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:16:13] [Netty Server IO #13/INFO]: <73F4N> helo[m
+[23:16:18] [Netty Server IO #13/INFO]: <73F4N> :wow[m
+[23:16:30] [Netty Server IO #13/INFO]: <73F4N> :nigga[m
+[23:16:33] [Netty Server IO #13/INFO]: <73F4N> wojfsado[m
+[23:16:35] [Netty Server IO #13/INFO]: <73F4N> f[m
+[23:16:40] [Netty Server IO #13/INFO]: <73F4N> th[m
+[23:16:40] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:41] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:41] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:42] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:42] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:43] [Netty Server IO #13/INFO]: <73F4N> h[m
+[23:16:46] [Netty Server IO #13/INFO]: <73F4N> :endprogram[m
+[23:16:46] [Server thread/INFO]: <MAIN> ***Ended execution of main program!![m
+[23:16:46] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63478.
+[23:16:46] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:63479.
+[23:32:32] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60918.
+[23:32:32] [Thread-317/INFO]: [RaspberryJuice] Starting input thread
+[23:32:32] [Thread-318/INFO]: [RaspberryJuice] Starting output thread!
+[23:32:33] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60918.
+[23:33:30] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60694.
+[23:33:30] [Thread-319/INFO]: [RaspberryJuice] Starting input thread
+[23:33:30] [Thread-320/INFO]: [RaspberryJuice] Starting output thread!
+[23:33:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60694.
+[23:33:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60699.
+[23:33:39] [Thread-321/INFO]: [RaspberryJuice] Starting input thread
+[23:33:39] [Thread-322/INFO]: [RaspberryJuice] Starting output thread!
+[23:33:39] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:60700.
+[23:33:39] [Thread-323/INFO]: [RaspberryJuice] Starting input thread
+[23:33:39] [Thread-324/INFO]: [RaspberryJuice] Starting output thread!
+[23:33:39] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:33:44] [Netty Server IO #13/INFO]: <73F4N> :enabletnt[m
+[23:33:44] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60699.
+[23:33:44] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:60700.
+[23:46:58] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55125.
+[23:46:58] [Thread-326/INFO]: [RaspberryJuice] Starting output thread!
+[23:46:58] [Thread-325/INFO]: [RaspberryJuice] Starting input thread
+[23:46:58] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:55126.
+[23:46:58] [Thread-327/INFO]: [RaspberryJuice] Starting input thread
+[23:46:58] [Thread-328/INFO]: [RaspberryJuice] Starting output thread!
+[23:46:58] [Server thread/INFO]: <MAIN> ***Main program has started!![m
+[23:47:02] [Netty Server IO #13/INFO]: <73F4N> :enabletnt[m
+[23:47:02] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player ID 44984!![m
+[23:47:13] [Netty Server IO #13/INFO]: <73F4N> :disabletnt[m
+[23:47:14] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52370.
+[23:47:14] [Thread-329/INFO]: [RaspberryJuice] Starting input thread
+[23:47:14] [Thread-330/INFO]: [RaspberryJuice] Starting output thread!
+[23:47:14] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player ID 44984!![m
+[23:47:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55126.
+[23:47:19] [Netty Server IO #13/INFO]: <73F4N> :enabletnt[m
+[23:47:19] [Server thread/INFO]: <TNTBot> ***The bot has been enabled for player ID 44984!![m
+[23:47:23] [Netty Server IO #13/INFO]: <73F4N> :disabletnt[m
+[23:47:23] [Thread-5/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52375.
+[23:47:23] [Thread-331/INFO]: [RaspberryJuice] Starting input thread
+[23:47:23] [Thread-332/INFO]: [RaspberryJuice] Starting output thread!
+[23:47:23] [Server thread/INFO]: <TNTBot> ***The bot has been disabled for player ID 44984!![m
+[23:47:23] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52370.
+[23:47:30] [Netty Server IO #13/INFO]: <73F4N> :endprogram[m
+[23:47:30] [Server thread/INFO]: <MAIN> ***Ended execution of main program!![m
+[23:47:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:55125.
+[23:47:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52375.
+[23:47:33] [Server thread/INFO]: 73F4N lost connection: Disconnected
+[23:47:33] [Server thread/INFO]: 73F4N left the game
+[23:47:36] [Server thread/INFO]: Stopping the server
+[23:47:36] [Server thread/INFO]: Stopping server
+[23:47:36] [Server thread/INFO]: [RaspberryJuice] Disabling RaspberryJuice v1.12.1
+[23:47:36] [Server thread/INFO]: [RaspberryJuice] Raspberry Juice Stopped
+[23:47:36] [Server thread/INFO]: Saving players
+[23:47:36] [Server thread/INFO]: Saving worlds
+[23:47:36] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[23:47:37] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[23:47:37] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end

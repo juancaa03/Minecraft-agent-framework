@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2024-11-12 21:52:50 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_hoe": {
     "criteria": {
       "has_cobblestone": "2024-11-12 18:21:52 +0100"
@@ -22,6 +28,19 @@
       "has_cobblestone": "2024-11-12 18:21:52 +0100"
     },
     "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2024-11-12 21:52:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2024-11-12 21:52:40 +0100",
+      "creeper": "2024-11-12 21:52:49 +0100"
+    },
+    "done": false
   },
   "minecraft:recipes/decorations/yellow_carpet": {
     "criteria": {
@@ -155,6 +174,12 @@
   "minecraft:recipes/redstone/stone_pressure_plate": {
     "criteria": {
       "has_stone": "2024-10-11 17:05:37 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2024-11-12 21:52:40 +0100"
     },
     "done": true
   },

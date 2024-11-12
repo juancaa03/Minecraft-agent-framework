@@ -1,2 +1,10 @@
 *.log.gz
 *.log
+*.pyc
+*.o
+*.a
+*.DS_Store
+*.md
+Server/
+
+!README.md
