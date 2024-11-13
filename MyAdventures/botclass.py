@@ -3,6 +3,8 @@ import mcpi.block as blocks
 import mcpi.entity as entities
 import mcpi.event as events
 from threading import Thread
+import time
+import random
 
 
 # main abstract class for a bot
@@ -42,7 +44,8 @@ class TNT(Bot):
     # specific function of the TNT bot
     def _main(self):
         while(self.control):    # run while the bot is enabled
+            time.sleep(random.randint(3, 30))   # spawn TNT once in a random interval between 3 and 30 seconds
             pos = self.mc.entity.getTilePos(self.entity)    # Get player position
-            floor = self.mc.getBlock(pos.x, pos.y-1, pos.z)  # Check what block the player is standing on
-            if(floor != blocks.AIR.id and floor != blocks.WATER.id and floor != blocks.WATER_STATIONARY.id):	# If the player is not flying or swimming
-                    self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
+            #floor = self.mc.getBlock(pos.x, pos.y-1, pos.z)  # Check what block the player is standing on
+            #if(floor != blocks.AIR.id and floor != blocks.WATER.id and floor != blocks.WATER_STATIONARY.id):	# If the player is not flying or swimming
+            self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player

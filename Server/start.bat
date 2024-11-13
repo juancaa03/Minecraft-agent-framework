@@ -1,2 +1,2 @@
-java -Xms1G -Xmx2G -jar -DIReallyKnowWhatIAmDoingISwear craftbukkit.jar
+java -Xms1G -Xmx4G -jar craftbukkit.jar
 PAUSE

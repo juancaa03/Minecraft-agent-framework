@@ -59,6 +59,8 @@ while(Script):
             TNTbotList[player] = bots.TNT(player)   # And create a new one that is ready
             
         elif (text.casefold() == ":endProgram".casefold()):
+            for player in playerList:
+                TNTbotList[player].stop()   # Make sure there are no threads running before closing program
             Script = 0  # Command to finish the execution of this program
             
 mc.postToChat("<MAIN> ***Ended execution of main program!!")  
