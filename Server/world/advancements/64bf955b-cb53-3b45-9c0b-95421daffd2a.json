@@ -47,17 +47,17 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dark_oak_stairs": {
-    "criteria": {
-      "has_planks": "2024-11-13 14:11:23 +0100"
-    },
-    "done": true
-  },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "skeleton": "2024-11-13 14:10:06 +0100"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs": {
+    "criteria": {
+      "has_planks": "2024-11-13 14:11:23 +0100"
+    },
+    "done": true
   },
   "minecraft:recipes/redstone/dark_oak_door": {
     "criteria": {

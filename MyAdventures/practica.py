@@ -59,18 +59,20 @@ while(Script):
             del TNTbotList[player]  # Delete the object (thread) for this player
             TNTbotList[player] = bots.TNT(player)   # And create a new one that is ready
             
-        elif (text.casefold() == ":endProgram".casefold()):
-            for player in playerList:
-                TNTbotList[player].stop()   # Make sure there are no threads running before closing program
-            Script = 0  # Command to finish the execution of this program
-        
-        # Comandos para ChatAI
-        elif text.casefold().startswith(":gpt "):
-            prompt = text[len(":gpt "):]  # Obtén el mensaje después de ":gpt "
+        elif (text.casefold() == ":enableGPT".casefold()):
             ChatAIbotList[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
-            ChatAIbotList[player].handle_gpt_command(prompt)
+            
+        elif (text.casefold() == ":disableGPT".casefold()):
             ChatAIbotList[player].stop()
             del ChatAIbotList[player]
             ChatAIbotList[player] = bots.ChatAI(player)
             
-mc.postToChat("<MAIN> ***Ended execution of main program!!")  
+        elif (text.casefold() == ":endProgram".casefold()):
+            for player in playerList:
+                TNTbotList[player].stop()   # Make sure there are no threads running before closing program
+                ChatAIbotList[player].stop()   # Make sure there are no threads running before closing program
+            Script = 0  # Command to finish the execution of this program
+
+
+
+mc.postToChat("<MAIN> ***Ended execution of main program!!")

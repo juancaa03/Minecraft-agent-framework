@@ -79,7 +79,15 @@ class ChatAI(Bot):
     # Main function for the ChatAI bot (to process commands)
     def _main(self):
         while self.control:
-            time.sleep(0.1)
+            chatEvents = self.mc.events.pollChatPosts()
+    
+            for command in chatEvents:
+                text = str(command.message) # Convert chat event to str
+                if(not text.startswith(":gpt ")):   # Skip if it doesn't start with ":gpt"
+                    continue
+                else:
+                    text = text[4:]
+                    self.handle_gpt_command(text + " (Keep your answer short please)")
 
     # Function to handle GPT prompts
     def handle_gpt_command(self, prompt):
