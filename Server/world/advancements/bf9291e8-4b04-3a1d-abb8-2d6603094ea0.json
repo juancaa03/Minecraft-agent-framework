@@ -1,0 +1,14 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-11-23 01:37:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2024-11-23 01:23:35 +0100"
+    },
+    "done": false
+  }
+}

@@ -5,6 +5,9 @@ import mcpi.event as events
 from threading import Thread
 import time
 import random
+from dotenv import dotenv_values
+from hugchat import hugchat
+from hugchat.login import Login
 
 
 # main abstract class for a bot
@@ -49,3 +52,39 @@ class TNT(Bot):
             #floor = self.mc.getBlock(pos.x, pos.y-1, pos.z)  # Check what block the player is standing on
             #if(floor != blocks.AIR.id and floor != blocks.WATER.id and floor != blocks.WATER_STATIONARY.id):	# If the player is not flying or swimming
             self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
+
+
+# HugChat setup
+try:
+    secrets = dotenv_values('hf.env')
+    hf_email = secrets['EMAIL']
+    hf_pass = secrets['PASS']
+except Exception as e:
+    print(f"Error loading HugChat credentials: {e}")
+
+# Function for generating bot response
+def generate_response(prompt_input, email, passwd):
+    sign = Login(email, passwd)
+    cookies = sign.login()
+    chatbot = hugchat.ChatBot(cookies=cookies.get_dict())
+    return chatbot.chat(prompt_input)
+
+# Main ChatAI Bot Class
+class ChatAI(Bot):
+    def __init__(self, entity):
+        super().__init__(entity)
+        self.name = "ChatAI"  # Name of the bot
+        self.t1 = Thread(target=self._main)  # Update thread with the function to execute
+
+    # Main function for the ChatAI bot (to process commands)
+    def _main(self):
+        while self.control:
+            time.sleep(0.1)
+
+    # Function to handle GPT prompts
+    def handle_gpt_command(self, prompt):
+        try:
+            response = generate_response(prompt, hf_email, hf_pass)
+            self.mc.postToChat(f"<GPT> {response}")  # Limit response length
+        except Exception as e:
+            self.mc.postToChat(f"<GPT> Error: {str(e)}")
