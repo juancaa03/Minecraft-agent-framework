@@ -87,13 +87,14 @@ class ChatAI(Bot):
                     continue
                 else:
                     text = text[4:]
-                    self.handle_gpt_command(text + " (Keep your answer short please)")
+                    self.handle_gpt_command(text + " (Keep your answer short please and in Minecraft context)")
 
     # Function to handle GPT prompts
     def handle_gpt_command(self, prompt):
         try:
             response = generate_response(prompt, hf_email, hf_pass)
             self.mc.postToChat(f"<GPT> {response}")  # Limit response length
+            #response.close();
         except Exception as e:
             self.mc.postToChat(f"<GPT> Error: {str(e)}")
 
@@ -118,5 +119,7 @@ class Insult(Bot):
         try:
             response = generate_response(prompt, hf_email, hf_pass)
             self.mc.postToChat(f"<Insult> {response}")  # Limit response length
+            time.sleep(1)
+            #response.close();
         except Exception as e:
             self.mc.postToChat(f"<Insult> Error: {str(e)}")

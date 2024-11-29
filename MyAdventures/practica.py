@@ -2,50 +2,39 @@ import mcpi.minecraft as game
 import Pyro4 as pyro
 import time
 import botclass as bots
+from BotManager import BotManager
 
-# Function to update the lists of bots, each assigned to a player (some of them)
-def updatePlayerList():
-    """Returns a list of players, followed by dictionaries of the bots that require to be
-    unique for each player in particular"""
-    list = mc.getPlayerEntityIds()  # Obtain a list of all connected players
-    
-    # For every player online, create a bot (do the same for every kind of bot)
-    TNTbotList = {entity: bots.TNT(entity) for entity in list}
-    # <<<< Add the new bot dicts here to update them as well >>>>
-    ChatAIbotList = {entity: bots.ChatAI(entity) for entity in list}
-    InsultBotList = {entity: bots.Insult(entity) for entity in list}
-    
-    return (list, TNTbotList, ChatAIbotList, InsultBotList)
+# Instanciar el BotManager Singleton
+bot_manager = BotManager()
+
+# Diccionario para registrar clases de bots
+bot_classes = {
+    'TNT': bots.TNT,
+    'ChatAI': bots.ChatAI,
+    'Insult': bots.Insult,
+}
 
 mc = game.Minecraft.create()    # Connect to the Minecraft game
 Script = 1  # Control variable to exit program when finished
 
-
-# Player list, dictionaries for the bots that are unique to each player, and singular bots
-playerList = []
-
-TNTbotList = {}
-ChatAIbotList = {}
-InsultBotList = {}
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # * Add bot dict for every new implemented bot and include the dict in the updatePlayerList function !!!! *
 # *********************************************************************************************************
 
-playerList, TNTbotList, ChatAIbotList, InsultBotList = updatePlayerList()   	# Lists initialisation
+# Actualización inicial
+bot_manager.update_player_list(mc, bot_classes)
 
 # Main program start
 mc.postToChat("<MAIN> ***Main program has started!!")
 
 # Execute until player wishes to stop it
 while(Script):
-    # If a new player joins, we want to assign them a bot so we update the lists
-    if(len(mc.getPlayerEntityIds()) != len(playerList)):
-        playerList, TNTbotList, ChatAIbotList, InsultBotList = updatePlayerList()
+    bot_manager.update_player_list(mc, bot_classes)
     
     # Read chat to see if anyone used a custom command
     chatEvents = mc.events.pollChatPosts()
     
-    for command in chatEvents:
+    for command in chatEvents:  
         text = str(command.message) # Convert chat event to str
         if(not text.startswith(":")):   # Skip if it doesn't start with ":"
             continue
@@ -54,34 +43,32 @@ while(Script):
         
         # Check what command was executed (ignore case)
         if (text.casefold() == ":enableTNT".casefold()):
-            TNTbotList[player].begin() # Start TNT bot for the player who ordered it
+            bot_manager.get_bot_list('TNT')[player].begin() # Start TNT bot for the player who ordered it
             
         elif (text.casefold() == ":disableTNT".casefold()):
-            TNTbotList[player].stop()   # Stop the TNT bot for the player who ordered it
-            del TNTbotList[player]  # Delete the object (thread) for this player
-            TNTbotList[player] = bots.TNT(player)   # And create a new one that is ready
+            bot_manager.get_bot_list('TNT')[player].stop()   # Stop the TNT bot for the player who ordered it
+            bot_manager.update_player_list(mc, bot_classes)
             
         elif (text.casefold() == ":enableGPT".casefold()):
-            ChatAIbotList[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
+            bot_manager.get_bot_list('ChatAI')[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
             
         elif (text.casefold() == ":disableGPT".casefold()):
-            ChatAIbotList[player].stop()
-            del ChatAIbotList[player]
-            ChatAIbotList[player] = bots.ChatAI(player)
+            bot_manager.get_bot_list('ChatAI')[player].stop()
+            bot_manager.update_player_list(mc, bot_classes)
 
         elif (text.casefold() == ":enableInsult".casefold()):
-            InsultBotList[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
+            bot_manager.get_bot_list('Insult')[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
             
         elif (text.casefold() == ":disableInsult".casefold()):
-            InsultBotList[player].stop()
-            del InsultBotList[player]
-            InsultBotList[player] = bots.Insult(player)
+            bot_manager.get_bot_list('Insult')[player].stop()
+            bot_manager.update_player_list(mc, bot_classes)
             
         elif (text.casefold() == ":endProgram".casefold()):
-            for player in playerList:
-                TNTbotList[player].stop()   # Make sure there are no threads running before closing program
-                ChatAIbotList[player].stop()   # Make sure there are no threads running before closing program
-                InsultBotList[player].stop()   # Make sure there are no threads running before closing program
+            # Detener todos los bots y terminar el programa
+            for bot_type in ['TNT', 'ChatAI', 'Insult']:
+                bot_list = bot_manager.get_bot_list(bot_type)
+                for bot in bot_list.values():
+                    bot.stop()
             Script = 0  # Command to finish the execution of this program
 
 
