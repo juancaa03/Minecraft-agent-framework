@@ -25,7 +25,7 @@ Script = 1  # Control variable to exit program when finished
 bot_manager.update_player_list(mc, bot_classes)
 
 # Main program start
-mc.postToChat("<MAIN> ***Main program has started!!")
+mc.postToChat("§a<MAIN> ***Main program has started!!")
 
 # Execute until player wishes to stop it
 while(Script):
@@ -73,4 +73,4 @@ while(Script):
 
 
 
-mc.postToChat("<MAIN> ***Ended execution of main program!!")
+mc.postToChat("§a<MAIN> ***Ended execution of main program!!")

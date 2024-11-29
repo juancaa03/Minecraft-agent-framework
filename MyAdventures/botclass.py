@@ -23,18 +23,18 @@ class Bot:
         if(not self.t1.is_alive()):
             self.control = True
             self.t1.start()
-            self.mc.postToChat(f"<{self.name}> ***The bot has been enabled for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot has been enabled for player ID {self.entity}!!")
         else:
-            self.mc.postToChat(f"<{self.name}> ***The bot is already running for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot is already running for player ID {self.entity}!!")
     
     # main function to stop the bot thread
     def stop(self):
         if(self.t1.is_alive()):
             self.control = False
             self.t1.join()
-            self.mc.postToChat(f"<{self.name}> ***The bot has been disabled for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot has been disabled for player ID {self.entity}!!")
         else:
-            self.mc.postToChat(f"<{self.name}> ***The bot is not running yet for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot is not running yet for player ID {self.entity}!!")
         
         
 # specific bot class to spawn TNT near the player
@@ -60,7 +60,7 @@ try:
     hf_email = secrets['EMAIL']
     hf_pass = secrets['PASS']
 except Exception as e:
-    print(f"Error loading HugChat credentials: {e}")
+    print(f"§2Error loading HugChat credentials: {e}")
 
 # Function for generating bot response
 def generate_response(prompt_input, email, passwd):
@@ -112,7 +112,7 @@ class Insult(Bot):
             for command in chatEvents:
                 text = str(command.message) # Convert chat event to str
                 insultingName = str(command.entityId)
-                self.insult_command("Generate low insults for: " + insultingName + " (Keep it short please), he typed this: "+text)
+                self.insult_command("Generate low insults (Keep it short please), he typed this: "+text)
 
     # Function to handle GPT prompts
     def insult_command(self, prompt):
