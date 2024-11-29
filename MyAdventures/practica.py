@@ -13,8 +13,9 @@ def updatePlayerList():
     TNTbotList = {entity: bots.TNT(entity) for entity in list}
     # <<<< Add the new bot dicts here to update them as well >>>>
     ChatAIbotList = {entity: bots.ChatAI(entity) for entity in list}
+    InsultBotList = {entity: bots.Insult(entity) for entity in list}
     
-    return (list, TNTbotList, ChatAIbotList)
+    return (list, TNTbotList, ChatAIbotList, InsultBotList)
 
 mc = game.Minecraft.create()    # Connect to the Minecraft game
 Script = 1  # Control variable to exit program when finished
@@ -25,11 +26,12 @@ playerList = []
 
 TNTbotList = {}
 ChatAIbotList = {}
+InsultBotList = {}
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # * Add bot dict for every new implemented bot and include the dict in the updatePlayerList function !!!! *
 # *********************************************************************************************************
 
-playerList, TNTbotList, ChatAIbotList = updatePlayerList()   	# Lists initialisation
+playerList, TNTbotList, ChatAIbotList, InsultBotList = updatePlayerList()   	# Lists initialisation
 
 # Main program start
 mc.postToChat("<MAIN> ***Main program has started!!")
@@ -38,7 +40,7 @@ mc.postToChat("<MAIN> ***Main program has started!!")
 while(Script):
     # If a new player joins, we want to assign them a bot so we update the lists
     if(len(mc.getPlayerEntityIds()) != len(playerList)):
-        playerList, TNTbotList, ChatAIbotList = updatePlayerList()
+        playerList, TNTbotList, ChatAIbotList, InsultBotList = updatePlayerList()
     
     # Read chat to see if anyone used a custom command
     chatEvents = mc.events.pollChatPosts()
@@ -66,11 +68,20 @@ while(Script):
             ChatAIbotList[player].stop()
             del ChatAIbotList[player]
             ChatAIbotList[player] = bots.ChatAI(player)
+
+        elif (text.casefold() == ":enableInsult".casefold()):
+            InsultBotList[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
+            
+        elif (text.casefold() == ":disableInsult".casefold()):
+            InsultBotList[player].stop()
+            del InsultBotList[player]
+            InsultBotList[player] = bots.Insult(player)
             
         elif (text.casefold() == ":endProgram".casefold()):
             for player in playerList:
                 TNTbotList[player].stop()   # Make sure there are no threads running before closing program
                 ChatAIbotList[player].stop()   # Make sure there are no threads running before closing program
+                InsultBotList[player].stop()   # Make sure there are no threads running before closing program
             Script = 0  # Command to finish the execution of this program
 
 

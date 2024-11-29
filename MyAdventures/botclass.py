@@ -96,3 +96,27 @@ class ChatAI(Bot):
             self.mc.postToChat(f"<GPT> {response}")  # Limit response length
         except Exception as e:
             self.mc.postToChat(f"<GPT> Error: {str(e)}")
+
+class Insult(Bot):
+    def __init__(self, entity):
+        super().__init__(entity)
+        self.name = "InsultBot"  # Name of the bot
+        self.t1 = Thread(target=self._main)  # Update thread with the function to execute
+
+    # Main function for the Insult bot (to process commands)
+    def _main(self):
+        while self.control:
+            chatEvents = self.mc.events.pollChatPosts()
+            
+            for command in chatEvents:
+                text = str(command.message) # Convert chat event to str
+                insultingName = str(command.entityId)
+                self.insult_command("Generate low insults for: " + insultingName + " (Keep it short please), he typed this: "+text)
+
+    # Function to handle GPT prompts
+    def insult_command(self, prompt):
+        try:
+            response = generate_response(prompt, hf_email, hf_pass)
+            self.mc.postToChat(f"<Insult> {response}")  # Limit response length
+        except Exception as e:
+            self.mc.postToChat(f"<Insult> Error: {str(e)}")
