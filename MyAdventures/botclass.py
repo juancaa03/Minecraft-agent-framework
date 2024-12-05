@@ -103,6 +103,8 @@ class Insult(Bot):
         super().__init__(entity)
         self.name = "InsultBot"  # Name of the bot
         self.t1 = Thread(target=self._main)  # Update thread with the function to execute
+        self.bot_entity_id = self.t1.name
+        self.player_name = self.mc.entity.getName(self.entity)
 
     # Main function for the Insult bot (to process commands)
     def _main(self):
@@ -111,15 +113,19 @@ class Insult(Bot):
             
             for command in chatEvents:
                 text = str(command.message) # Convert chat event to str
-                insultingName = str(command.entityId)
-                self.insult_command("Generate low insults (Keep it short please), he typed this: "+text)
+                sender_entity_id = command.entityId
+                if sender_entity_id == self.bot_entity_id:
+                    continue
+                
+                if(not text.startswith(":") and not text.startswith("***")):
+                    self.insult_command("Generate low insults for this player: "+ self.player_name + "(Keep it short please), he typed this: "+text)
+
 
     # Function to handle GPT prompts
     def insult_command(self, prompt):
         try:
             response = generate_response(prompt, hf_email, hf_pass)
             self.mc.postToChat(f"<Insult> {response}")  # Limit response length
-            time.sleep(1)
             #response.close();
         except Exception as e:
             self.mc.postToChat(f"<Insult> Error: {str(e)}")
