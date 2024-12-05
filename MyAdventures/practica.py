@@ -17,6 +17,10 @@ bot_classes = {
 mc = game.Minecraft.create()    # Connect to the Minecraft game
 Script = 1  # Control variable to exit program when finished
 
+# Función para detener los bots
+def stop_bot(bot):
+    bot.stop()
+
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # * Add bot dict for every new implemented bot and include the dict in the updatePlayerList function !!!! *
 # *********************************************************************************************************
@@ -67,8 +71,7 @@ while(Script):
             # Detener todos los bots y terminar el programa
             for bot_type in ['TNT', 'ChatAI', 'Insult']:
                 bot_list = bot_manager.get_bot_list(bot_type)
-                for bot in bot_list.values():
-                    bot.stop()
+                list(map(stop_bot, bot_list.values()))
             Script = 0  # Command to finish the execution of this program
 
 

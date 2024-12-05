@@ -16,10 +16,10 @@ class BotManager:
         new_player_list = mc.getPlayerEntityIds()
         if new_player_list != self.player_list:
             self.player_list = new_player_list
-            # Crear una lista de bots por cada tipo
-            self.tnt_bot_list = {entity: bot_classes['TNT'](entity) for entity in self.player_list}
-            self.chat_ai_bot_list = {entity: bot_classes['ChatAI'](entity) for entity in self.player_list}
-            self.insult_bot_list = {entity: bot_classes['Insult'](entity) for entity in self.player_list}
+            # Usar map() con una lambda para crear las listas de bots por tipo
+            self.tnt_bot_list = dict(map(lambda entity: (entity, bot_classes['TNT'](entity)), self.player_list))
+            self.chat_ai_bot_list = dict(map(lambda entity: (entity, bot_classes['ChatAI'](entity)), self.player_list))
+            self.insult_bot_list = dict(map(lambda entity: (entity, bot_classes['Insult'](entity)), self.player_list))
 
     def get_bot_list(self, bot_type):
         """Obtiene la lista de bots del tipo especificado."""
