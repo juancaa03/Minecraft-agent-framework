@@ -17,24 +17,25 @@ class Bot:
         self.entity = entity    # player who called the function
         self.control = None     # control variable for main loop in bot function
         self.t1 = Thread        # declaration of a thread for the bot (needs to be updated by the specific bot)
+        self.player_name = self.mc.entity.getName(self.entity)
     
     # main function to start a thread with the bot
     def begin(self):
         if(not self.t1.is_alive()):
             self.control = True
             self.t1.start()
-            self.mc.postToChat(f"§2<{self.name}> ***The bot has been enabled for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot has been enabled for {self.player_name}!!")
         else:
-            self.mc.postToChat(f"§2<{self.name}> ***The bot is already running for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot is already running for {self.player_name}!!")
     
     # main function to stop the bot thread
     def stop(self):
         if(self.t1.is_alive()):
             self.control = False
             self.t1.join()
-            self.mc.postToChat(f"§2<{self.name}> ***The bot has been disabled for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot has been disabled for {self.player_name}!!")
         else:
-            self.mc.postToChat(f"§2<{self.name}> ***The bot is not running yet for player ID {self.entity}!!")
+            self.mc.postToChat(f"§2<{self.name}> ***The bot is not running yet for {self.player_name}!!")
         
         
 # specific bot class to spawn TNT near the player
