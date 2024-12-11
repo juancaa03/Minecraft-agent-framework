@@ -1,5 +1,4 @@
 import mcpi.minecraft as game
-import Pyro4 as pyro
 import time
 import botclass as bots
 from BotManager import BotManager
