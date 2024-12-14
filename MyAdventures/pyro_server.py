@@ -54,7 +54,7 @@ class MinecraftPyroServer:
 
 # Iniciar el servidor Pyro
 if __name__ == "__main__":
-    daemon = Pyro4.Daemon()  # Iniciar demonio Pyro
+    daemon = Pyro4.Daemon(host="0.0.0.0", port=9090).serveSimple({ MinecraftPyroServer: "practicatap.practica" }, ns = True)
     uri = daemon.register(MinecraftPyroServer())
     print(f"Servidor Pyro iniciado en {uri}")
     daemon.requestLoop()

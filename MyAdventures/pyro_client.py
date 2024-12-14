@@ -3,8 +3,9 @@ import Pyro4
 # Conectar al servidor Pyro
 def connect_to_server():
     # Dirección del servidor Pyro (debe coincidir con la URI del servidor)
-    default_uri = "PYRO:obj_167b1c2b8aed444592458f49bf25bb64@localhost:50195"
-    uri = input(f"Introduce la URI del servidor Pyro (predeterminado: {default_uri}): ") or default_uri
+    # default_uri = "PYRO:obj_167b1c2b8aed444592458f49bf25bb64@localhost:50195"
+    # uri = input(f"Introduce la URI del servidor Pyro (predeterminado: {default_uri}): ") or default_uri
+    uri = "PYRONAME:practicatap.practica"
     try:
         server = Pyro4.Proxy(uri)  # Conectar al servidor Pyro
         print("Conexión exitosa al servidor.")
