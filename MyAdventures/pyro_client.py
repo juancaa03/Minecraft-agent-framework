@@ -14,12 +14,14 @@ def connect_to_server():
 # Enviar comandos para controlar los bots
 def interact_with_server(server):
     while True:
-        print("\nComandos disponibles:")
+        print("\nBots disponibles:\nTNT - ChatAI - Insult")
+        print("Comandos disponibles:")
         print(":sendMessage <message> - Enviar un mensaje al chat")
         print(":enableBot <bot_type> <player_id> - Activar un bot")
         print(":disableBot <player_id> - Desactivar un bot")
         print(":getPlayers - Obtener lista de jugadores conectados")
         print(":exit - Salir del cliente")
+        
 
         command = input("Introduce un comando: ").strip().casefold()
 

@@ -165,10 +165,11 @@ class BotManager:
                 self.tnt_bot_list[player] = TNT(player)
                 self.chat_ai_bot_list[player] = ChatAI(player)
                 self.insult_bot_list[player] = Insult(player)
+            self.printLists()
         
         elif len(new_player_list) < len(self.player_list):
             diff = list(set(self.player_list).difference(new_player_list))
-            self.player_list = [x for x in self.player_list not in new_player_list]
+            self.player_list = new_player_list  #[x for x in self.player_list if x in new_player_list]
             for player in diff:
                 self.tnt_bot_list[player].stop()
                 del self.tnt_bot_list[player]
@@ -178,7 +179,7 @@ class BotManager:
                 
                 self.insult_bot_list[player].stop()
                 del self.insult_bot_list[player]
-            
+            self.printLists()
             
             
             # Usar map() con una lambda para crear las listas de bots por tipo
