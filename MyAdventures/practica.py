@@ -12,6 +12,23 @@ Script = 1  # Control variable to exit program when finished
 def stop_bot(bot):
     bot.stop()
 
+# Funcion para activar bots
+def enableBot(player, bot_type):
+    bot_manager.get_bot_list(bot_type)[player].begin()
+
+# Funcion para desactivar bots
+def disableBot(player, bot_type):
+    bot_list = bot_manager.get_bot_list(bot_type)
+    bot_list[player].stop()
+    del bot_list[player]
+    if bot_type == 'TNT':
+        bot_list[player] = bots.TNT(player)
+    elif bot_type == 'ChatAI':
+        bot_list[player] = bots.ChatAI(player)
+    elif bot_type == 'Insult':
+        bot_list[player] = bots.Insult(player)
+
+
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # * Add bot dict for every new implemented bot and include the dict in the updatePlayerList function !!!! *
 # *********************************************************************************************************
@@ -40,34 +57,22 @@ while(Script):
         
         # Check what command was executed (ignore case)
         if (text.casefold() == ":enableTNT".casefold()):
-            bot_manager.get_bot_list('TNT')[player].begin() # Start TNT bot for the player who ordered it
+            enableBot(player, 'TNT')
             
         elif (text.casefold() == ":disableTNT".casefold()):
-            TNTbotList = bot_manager.get_bot_list('TNT')    # Obtain the list of the specified bot
-            TNTbotList[player].stop()  # Stop the TNT bot for the player who ordered it
-            del TNTbotList[player]  # Delete the object (thread) for this player
-            TNTbotList[player] = bots.TNT(player)   # And create a new one that is ready
-            
+            disableBot(player, 'TNT')
             
         elif (text.casefold() == ":enableGPT".casefold()):
-            bot_manager.get_bot_list('ChatAI')[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
+            enableBot(player, 'ChatAI')
             
         elif (text.casefold() == ":disableGPT".casefold()):
-            GPTbotList = bot_manager.get_bot_list('ChatAI')    # Obtain the list of the specified bot
-            GPTbotList[player].stop()  # Stop the TNT bot for the player who ordered it
-            del GPTbotList[player]  # Delete the object (thread) for this player
-            GPTbotList[player] = bots.ChatAI(player)   # And create a new one that is ready
-
+            disableBot(player, 'ChatAI')
 
         elif (text.casefold() == ":enableInsult".casefold()):
-            bot_manager.get_bot_list('Insult')[player].begin()  # Inicia el bot de ChatAI para el jugador que lo ordenó
+            enableBot(player, 'Insult')
             
         elif (text.casefold() == ":disableInsult".casefold()):
-            InsultBotList = bot_manager.get_bot_list('Insult')    # Obtain the list of the specified bot
-            InsultBotList[player].stop()  # Stop the TNT bot for the player who ordered it
-            del InsultBotList[player]  # Delete the object (thread) for this player
-            InsultBotList[player] = bots.Insult(player)   # And create a new one that is ready
-            
+            disableBot(player, 'Insult')
             
         elif (text.casefold() == ":endProgram".casefold()):
             # Detener todos los bots y terminar el programa
