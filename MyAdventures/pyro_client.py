@@ -5,7 +5,6 @@ def connect_to_server():
     # Dirección del servidor Pyro (debe coincidir con la URI del servidor)
     try:
         server = Pyro4.Proxy("PYRO:practicatap.practica@73f4n.ddns.net:9090")  # Conectar al servidor Pyro
-        print("Conexión exitosa al servidor.")
         return server
     except Exception as e:
         print(f"Error al conectar al servidor: {e}")
