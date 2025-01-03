@@ -21,15 +21,15 @@ def interact_with_server(server):
         print(":getPlayers - Obtener lista de jugadores conectados")
         print(":exit - Salir del cliente")
 
-        command = input("Introduce un comando: ").strip()
+        command = input("Introduce un comando: ").strip().casefold()
 
         try:
-            if command.startswith(":sendMessage"):
+            if command.startswith(":sendMessage".casefold()):
                 message = command[len(":sendMessage"):].strip()
                 response = server.send_message(message)
                 print(response)
 
-            elif command.startswith(":enableBot"):
+            elif command.startswith(":enableBot".casefold()):
                 parts = command.split()
                 if len(parts) != 3:
                     print("Uso incorrecto. Usa: :enableBot <bot_type> <player_id>")
@@ -39,7 +39,7 @@ def interact_with_server(server):
                 response = server.enable_bot(bot_type, player_id)
                 print(response)
 
-            elif command.startswith(":disableBot"):
+            elif command.startswith(":disableBot".casefold()):
                 parts = command.split()
                 if len(parts) != 3:
                     print("Uso incorrecto. Usa: :disableBot <bot_type> <player_id>")
@@ -49,15 +49,15 @@ def interact_with_server(server):
                 response = server.disable_bot(bot_type, player_id)
                 print(response)
 
-            elif command == ":getPlayers":
+            elif command == ":getPlayers".casefold():
                 players = server.get_players()
                 print(f"Jugadores conectados: {players}")
             
-            elif command == ":showBots":
+            elif command == ":showBots".casefold():
                 players = server.show_bots()
                 print(f"Bots: {players}")
 
-            elif command == ":exit":
+            elif command == ":exit".casefold():
                 print("Saliendo del cliente...")
                 break
 
