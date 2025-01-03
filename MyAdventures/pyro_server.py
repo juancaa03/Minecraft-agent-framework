@@ -1,17 +1,21 @@
 import Pyro4
 import mcpi.minecraft as game
-from BotManager import BotManager
-from botclass import TNT, ChatAI, Insult  # Importar clases de bots
+import botclass as bots
 
 # Inicializar el servidor Pyro
 @Pyro4.expose
+@Pyro4.behavior(instance_mode="single")
 class MinecraftPyroServer:
     def __init__(self):
         self.mc = game.Minecraft.create()
-        self.bot_manager = BotManager()  # Crear instancia de BotManager con Minecraft
+        self.bot_manager = bots.BotManager.getInstance()  # Crear instancia de BotManager con Minecraft
+        print(self.bot_manager)
+        self.bot_manager.printLists()
+        self.bot_manager.update_player_list(self.mc)
+        self.bot_manager.printLists()        
 
     def send_message(self, message):
-        self.mc.postToChat(message)
+        self.mc.postToChat("§5<Pyro4> " + message)
         return f"Mensaje enviado: {message}"
     
     def get_players(self):
@@ -24,10 +28,7 @@ class MinecraftPyroServer:
     def enable_bot(self, bot_type, player_id):
         try:
             # Actualizar la lista de jugadores y bots
-            self.bot_manager.update_player_list(
-                self.mc,  # Pasar la instancia de Minecraft
-                {'TNT': TNT, 'ChatAI': ChatAI, 'Insult': Insult}  # Pasar las clases de bots
-            )
+            #self.bot_manager.update_player_list(self.mc)  # Pasar la instancia de Minecraft
             bot_list = self.bot_manager.get_bot_list(bot_type)
             if player_id not in bot_list:
                 return f"El jugador con ID {player_id} no está conectado o no tiene un bot disponible."
@@ -50,11 +51,20 @@ class MinecraftPyroServer:
             return f"Bot {bot_type} desactivado para el jugador {player_id}."
         except Exception as e:
             return f"Error: {e}"
+        
+    def show_bots(self):
+        for bot_type in ['TNT', 'ChatAI', 'Insult']:
+                bot_list = self.bot_manager.get_bot_list(bot_type)
+                print(f"{bot_list.values()}")
 
 
 # Iniciar el servidor Pyro
 if __name__ == "__main__":
-    daemon = Pyro4.Daemon(host="0.0.0.0", port=9090).serveSimple({ MinecraftPyroServer: "practicatap.practica" }, ns = True)
+    daemon = Pyro4.Daemon.serveSimple({ MinecraftPyroServer: "practicatap.practica" },  # Nombre del objeto en el servidor pyro4
+                                      host = "0.0.0.0",     # 0.0.0.0 para exponer el servidor a internet
+                                      port = 9090,  # Puerto por defecto del servidor pyro4
+                                      ns = False,   # No usar Nameserver
+                                      verbose = True)   # Mostrar informacion adicional
     uri = daemon.register(MinecraftPyroServer())
     print(f"Servidor Pyro iniciado en {uri}")
     daemon.requestLoop()

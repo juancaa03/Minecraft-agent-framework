@@ -2,16 +2,16 @@ import mcpi.minecraft as game
 import mcpi.block as blocks
 import mcpi.entity as entities
 import mcpi.event as events
-from threading import Thread
-import time
 import random
+import time
+from threading import Thread
 from dotenv import dotenv_values
 from hugchat import hugchat
 from hugchat.login import Login
 
 
 # main abstract class for a bot
-class Bot:
+class Bot():
     def __init__(self, entity):
         self.mc = game.Minecraft.create()   # minecraft game server connection
         self.entity = entity    # player who called the function
@@ -44,15 +44,19 @@ class TNT(Bot):
         super().__init__(entity)  # inherit attributes
         self.name = "TNTBot"    # name of this specific bot
         self.t1 = Thread(target=self._main) # update thread with the function to execute
+        self.counter = 0
         
     # specific function of the TNT bot
     def _main(self):
         while(self.control):    # run while the bot is enabled
-            time.sleep(random.randint(3, 30))   # spawn TNT once in a random interval between 3 and 30 seconds
-            pos = self.mc.entity.getTilePos(self.entity)    # Get player position
-            #floor = self.mc.getBlock(pos.x, pos.y-1, pos.z)  # Check what block the player is standing on
-            #if(floor != blocks.AIR.id and floor != blocks.WATER.id and floor != blocks.WATER_STATIONARY.id):	# If the player is not flying or swimming
-            self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
+            if self.counter > 0:
+                time.sleep(1)
+                self.counter = self.counter - 1
+            else:
+                self.counter = random.randint(3, 15)
+                # spawn TNT once in a random interval between 3 and 15 seconds
+                pos = self.mc.entity.getTilePos(self.entity)    # Get player position
+                self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
 
 
 # HugChat setup
@@ -88,7 +92,7 @@ class ChatAI(Bot):
                     continue
                 else:
                     text = text[4:]
-                    self.handle_gpt_command(text + " (Keep your answer short please and in Minecraft context)")
+                    self.handle_gpt_command(text + "  ")
 
     # Function to handle GPT prompts
     def handle_gpt_command(self, prompt):
@@ -118,7 +122,7 @@ class Insult(Bot):
                 if sender_entity_id == self.bot_entity_id:
                     continue
                 
-                if(not text.startswith(":") and not text.startswith("***")):
+                if(not text.startswith(":") and not text.startswith("<")):
                     self.insult_command("Generate low insults for this player: "+ self.player_name + "(Keep it short please), he typed this: "+text)
 
 
@@ -130,3 +134,73 @@ class Insult(Bot):
             #response.close();
         except Exception as e:
             self.mc.postToChat(f"<Insult> Error: {str(e)}")
+
+class BotManager:
+    __instance = None
+    player_list = []
+    tnt_bot_list = {}
+    chat_ai_bot_list = {}
+    insult_bot_list = {}
+    
+    @staticmethod
+    def getInstance():
+        if BotManager.__instance == None:
+            BotManager()
+        return BotManager.__instance
+    
+    def __init__(self):
+        if BotManager.__instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            BotManager.__instance = self
+    
+
+    def update_player_list(self, mc):
+        """Actualiza las listas de jugadores y bots para cada jugador."""
+        new_player_list = mc.getPlayerEntityIds()
+        if len(new_player_list) > len(self.player_list):
+            diff = list(set(new_player_list).difference(self.player_list))
+            self.player_list.extend(diff)
+            for player in diff:
+                self.tnt_bot_list[player] = TNT(player)
+                self.chat_ai_bot_list[player] = ChatAI(player)
+                self.insult_bot_list[player] = Insult(player)
+        
+        elif len(new_player_list) < len(self.player_list):
+            diff = list(set(self.player_list).difference(new_player_list))
+            self.player_list = [x for x in self.player_list not in new_player_list]
+            for player in diff:
+                self.tnt_bot_list[player].stop()
+                del self.tnt_bot_list[player]
+                
+                self.chat_ai_bot_list[player].stop()
+                del self.chat_ai_bot_list[player]
+                
+                self.insult_bot_list[player].stop()
+                del self.insult_bot_list[player]
+            
+            
+            
+            # Usar map() con una lambda para crear las listas de bots por tipo
+            #self.tnt_bot_list = dict(map(lambda entity: (entity, TNT(entity)), self.player_list))
+            #self.chat_ai_bot_list = dict(map(lambda entity: (entity, ChatAI(entity)), self.player_list))
+            #self.insult_bot_list = dict(map(lambda entity: (entity, Insult(entity)), self.player_list))
+
+    
+    def get_bot_list(self, bot_type):
+        """Obtiene la lista de bots del tipo especificado."""
+        if bot_type == 'TNT':
+            return self.tnt_bot_list
+        elif bot_type == 'ChatAI':
+            return self.chat_ai_bot_list
+        elif bot_type == 'Insult':
+            return self.insult_bot_list
+        else:
+            raise ValueError("Invalid bot type")
+    
+    
+    def printLists(self):
+        print("Player list = "+str(self.player_list))
+        print("TNT list = "+str(self.tnt_bot_list))
+        print("GPT list = "+str(self.chat_ai_bot_list))
+        print("Insult list = "+str(self.insult_bot_list))

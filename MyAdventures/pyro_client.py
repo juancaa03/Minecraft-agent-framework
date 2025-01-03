@@ -3,11 +3,8 @@ import Pyro4
 # Conectar al servidor Pyro
 def connect_to_server():
     # Dirección del servidor Pyro (debe coincidir con la URI del servidor)
-    # default_uri = "PYRO:obj_167b1c2b8aed444592458f49bf25bb64@localhost:50195"
-    # uri = input(f"Introduce la URI del servidor Pyro (predeterminado: {default_uri}): ") or default_uri
-    uri = "PYRONAME:practicatap.practica"
     try:
-        server = Pyro4.Proxy(uri)  # Conectar al servidor Pyro
+        server = Pyro4.Proxy("PYRO:practicatap.practica@73f4n.ddns.net:9090")  # Conectar al servidor Pyro
         print("Conexión exitosa al servidor.")
         return server
     except Exception as e:
@@ -55,6 +52,10 @@ def interact_with_server(server):
             elif command == ":getPlayers":
                 players = server.get_players()
                 print(f"Jugadores conectados: {players}")
+            
+            elif command == ":showBots":
+                players = server.show_bots()
+                print(f"Bots: {players}")
 
             elif command == ":exit":
                 print("Saliendo del cliente...")
