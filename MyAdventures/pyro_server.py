@@ -10,9 +10,9 @@ class MinecraftPyroServer:
         self.mc = game.Minecraft.create()
         self.bot_manager = bots.BotManager.getInstance()  # Crear instancia de BotManager con Minecraft
         print(self.bot_manager)
-        self.bot_manager.printLists()
         self.bot_manager.update_player_list(self.mc)
-        self.bot_manager.printLists()        
+        self.bot_manager.printLists()
+        self.mc.postToChat("§5<Pyro4> Pyro4 Server currently running...")
 
     def send_message(self, message):
         self.mc.postToChat("§5<Pyro4> " + message)
@@ -56,6 +56,9 @@ class MinecraftPyroServer:
         for bot_type in ['TNT', 'ChatAI', 'Insult']:
                 bot_list = self.bot_manager.get_bot_list(bot_type)
                 print(f"{bot_list.values()}")
+                
+    def wake_server(self):
+        return f"The server is connected and active!"
 
 
 # Iniciar el servidor Pyro

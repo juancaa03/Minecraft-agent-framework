@@ -13,6 +13,9 @@ def connect_to_server():
 
 # Enviar comandos para controlar los bots
 def interact_with_server(server):
+    response = server.wake_server()
+    print(response)
+    
     while True:
         print("\nBots disponibles:\nTNT - ChatAI - Insult")
         print("Comandos disponibles:")
