@@ -82,4 +82,4 @@ def test_desactivar_bot(server, minecraft_data):
     assert result == f"Bot TNT desactivado para el jugador {player_list[0]}."'''
 
 
-# Generate coverage report: pytest --cov --cov-config=./.coveragerc --cov-report term-missing --junitxml=junit.xml -o junit_family=legacy
+# Generate coverage report: pytest --cov --junitxml=junit.xml -o junit_family=legacy
