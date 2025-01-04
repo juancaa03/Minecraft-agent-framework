@@ -1,0 +1,40 @@
+name: Run Tests and Generate Coverage Report
+
+on:
+  push:
+    branches:
+      - main  # Se ejecutará en cada push a la rama principal
+  pull_request:
+    branches:
+      - main  # También se ejecutará en cada pull request hacia la rama principal
+
+jobs:
+  test:
+    runs-on: Windows
+
+    steps:
+      # Paso 1: Checkout del código
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Paso 2: Configurar Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+      # Paso 3: Instalar las dependencias
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip --no-cache-dir
+          pip install pytest pytest-cov --no-cache-dir
+      # Paso 4: Ejecutar las pruebas y generar el informe de cobertura
+      - name: Run tests with coverage
+        run: |
+          pytest --cov=MyAdventures --cov-report=xml -v
+
+      # Paso 5: Subir el informe de cobertura como un artefacto
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage.xml  # El archivo generado por pytest
