@@ -80,3 +80,6 @@ def test_desactivar_bot(server, minecraft_data):
     _, player_list = minecraft_data
     result = server.disable_bot('TNT', player_list[0])
     assert result == f"Bot TNT desactivado para el jugador {player_list[0]}."'''
+
+
+# Generate coverage report: pytest --cov --junitxml=junit.xml
