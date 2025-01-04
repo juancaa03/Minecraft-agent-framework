@@ -31,10 +31,16 @@ jobs:
       - name: Run tests with coverage
         run: |
           pytest --cov=MyAdventures --cov-report=xml -v
-
-      # Paso 5: Subir el informe de cobertura como un artefacto
-      - name: Upload coverage report
+      
+      # Paso 5: Subir el informe de cobertura a Codecov
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+      
+      # Paso 6: Subir el informe de cobertura como artefacto
+      - name: Upload coverage report as artifact
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
-          path: coverage.xml  # El archivo generado por pytest
+          path: coverage.xml
