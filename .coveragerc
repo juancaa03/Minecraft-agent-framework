@@ -1,0 +1,15 @@
+[coverage:run]
+branch = True
+
+[coverage:report]
+show_missing = True
+
+[coverage:paths]
+source =
+    MyAdventures
+
+[coverage:omit]
+omit =
+    MyAdventures/tests/*
+    MyAdventures/mcpi/*
+    MyAdventures/__pycache__/*
