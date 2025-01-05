@@ -83,3 +83,4 @@ def test_desactivar_bot(server, minecraft_data):
 
 
 # Generate coverage report: pytest --cov --junitxml=junit.xml -o junit_family=legacy
+# pytest --cov=MyAdventures --cov-report=xml:coverage.xml --junitxml=junit.xml -o junit_family=legacy
