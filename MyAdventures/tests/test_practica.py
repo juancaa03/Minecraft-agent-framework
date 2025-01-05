@@ -2,6 +2,7 @@ import sys
 import os
 import pytest
 import Pyro4
+import time
 
 # Asegura que el directorio base y MyAdventures están en el PATH
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -33,6 +34,12 @@ def test_activar_tnt(minecraft_data):
     result = practica.enableBot(player_list[0], 'TNT')
     assert result is None
 
+def test_activar_tnt_activado(minecraft_data):
+    time.sleep(2)
+    mc, player_list = minecraft_data
+    result = practica.enableBot(player_list[0], 'TNT')
+    assert result is None
+
 def test_activar_ai(minecraft_data):
     mc, player_list = minecraft_data
     result = practica.enableBot(player_list[0], 'ChatAI')
@@ -48,13 +55,22 @@ def test_desactivar_tnt(minecraft_data):
     result = practica.disableBot(player_list[0], 'TNT')
     assert result is None
 
+def test_desactivar_tnt_desactivado(minecraft_data):
+    mc, player_list = minecraft_data
+    result = practica.disableBot(player_list[0], 'TNT')
+    assert result is None
+
 def test_desactivar_ai(minecraft_data):
     mc, player_list = minecraft_data
+    mc.postToChat(":gpt Hi")
+    time.sleep(2)
     result = practica.disableBot(player_list[0], 'ChatAI')
     assert result is None
 
 def test_desactivar_insult(minecraft_data):
     mc, player_list = minecraft_data
+    mc.postToChat("Insultame")
+    time.sleep(2)
     result = practica.disableBot(player_list[0], 'Insult')
     assert result is None
 
