@@ -6,10 +6,7 @@ show_missing = True
 
 [coverage:paths]
 source =
-    MyAdventures
+    MyAdventures/botclass.py
+    MyAdventures/practica.py
+    MyAdventures/pyro_server.py
 
-[coverage:omit]
-omit =
-    MyAdventures/tests/*
-    MyAdventures/mcpi/*
-    MyAdventures/__pycache__/*
