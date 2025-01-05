@@ -61,7 +61,7 @@ class TNT(Bot):
 
 # HugChat setup
 try:
-    secrets = dotenv_values('hf.env')
+    secrets = dotenv_values('MyAdventures/hf.env')
     hf_email = secrets['EMAIL']
     hf_pass = secrets['PASS']
 except Exception as e:
