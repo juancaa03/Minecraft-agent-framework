@@ -58,6 +58,10 @@ def test_desactivar_insult(minecraft_data):
     result = practica.disableBot(player_list[0], 'Insult')
     assert result is None
 
+def test_wake_server(server):
+    result = server.wake_server()
+    assert result == "The server is connected and active!"
+
 def test_mostrar_bots(server):
     result = server.show_bots()
     assert result is None
