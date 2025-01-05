@@ -17,7 +17,7 @@ import practica
 @pytest.fixture(scope="module")
 def server():
     try:
-        return Pyro4.Proxy("PYRO:practicatap.practica@73f4n.ddns.net:9090")
+        return Pyro4.Proxy("PYRO:practicatap.practica@localhost:9090")
     except Exception as e:
         pytest.fail(f"Error al conectar al servidor: {e}")
 
@@ -57,7 +57,7 @@ def test_desactivar_insult(minecraft_data):
     mc, player_list = minecraft_data
     result = practica.disableBot(player_list[0], 'Insult')
     assert result is None
-'''
+
 def test_mostrar_bots(server):
     result = server.show_bots()
     assert result is None
@@ -79,7 +79,7 @@ def test_activar_bot(server, minecraft_data):
 def test_desactivar_bot(server, minecraft_data):
     _, player_list = minecraft_data
     result = server.disable_bot('TNT', player_list[0])
-    assert result == f"Bot TNT desactivado para el jugador {player_list[0]}."'''
+    assert result == f"Bot TNT desactivado para el jugador {player_list[0]}."
 
 
 # Generate coverage report: pytest --cov --cov-report=xml:coverage.xml --junitxml=junit.xml
