@@ -14,6 +14,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Upload junit.xml as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-report
+          path: junit.xml
+
       - name: Download junit.xml artifact
         uses: actions/download-artifact@v3
         with:
