@@ -1,12 +1,6 @@
-[coverage:run]
-branch = True
-
-[coverage:report]
-show_missing = True
-
-[coverage:paths]
-source =
-    MyAdventures/botclass.py
-    MyAdventures/practica.py
-    MyAdventures/pyro_server.py
+[run]
+source = MyAdventures
+omit =
+    MyAdventures/tests/*
+    MyAdventures/mcpi/*
 
