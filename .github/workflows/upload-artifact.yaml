@@ -1,0 +1,22 @@
+name: Upload JUnit XML Artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'junit.xml'
+        required: true
+
+jobs:
+  upload-artifact:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload junit.xml as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-report
+          path: ${{ github.event.inputs.file_path }}
