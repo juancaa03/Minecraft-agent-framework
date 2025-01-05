@@ -3,4 +3,5 @@ source = MyAdventures
 omit =
     MyAdventures/tests/*
     MyAdventures/mcpi/*
+    MyAdventures/pyro_client.py
 
