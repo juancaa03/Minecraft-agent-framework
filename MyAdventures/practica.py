@@ -21,11 +21,11 @@ def disableBot(player, bot_type):
     bot_list = bot_manager.get_bot_list(bot_type)
     bot_list[player].stop()
     del bot_list[player]
-    if bot_type == 'TNT':
+    if bot_type == 'TNT'.casefold():
         bot_list[player] = bots.TNT(player)
-    elif bot_type == 'ChatAI':
+    elif bot_type == 'ChatAI'.casefold():
         bot_list[player] = bots.ChatAI(player)
-    elif bot_type == 'Insult':
+    elif bot_type == 'Insult'.casefold():
         bot_list[player] = bots.Insult(player)
 
 
@@ -57,26 +57,26 @@ while(Script):
         
         # Check what command was executed (ignore case)
         if (text.casefold() == ":enableTNT".casefold()):
-            enableBot(player, 'TNT')
+            enableBot(player, 'TNT'.casefold())
             
         elif (text.casefold() == ":disableTNT".casefold()):
-            disableBot(player, 'TNT')
+            disableBot(player, 'TNT'.casefold())
             
         elif (text.casefold() == ":enableGPT".casefold()):
-            enableBot(player, 'ChatAI')
+            enableBot(player, 'ChatAI'.casefold())
             
         elif (text.casefold() == ":disableGPT".casefold()):
-            disableBot(player, 'ChatAI')
+            disableBot(player, 'ChatAI'.casefold())
 
         elif (text.casefold() == ":enableInsult".casefold()):
-            enableBot(player, 'Insult')
+            enableBot(player, 'Insult'.casefold())
             
         elif (text.casefold() == ":disableInsult".casefold()):
-            disableBot(player, 'Insult')
+            disableBot(player, 'Insult'.casefold())
             
         elif (text.casefold() == ":endProgram".casefold()):
             # Detener todos los bots y terminar el programa
-            for bot_type in ['TNT', 'ChatAI', 'Insult']:
+            for bot_type in ['TNT'.casefold(), 'ChatAI'.casefold(), 'Insult'.casefold()]:
                 bot_list = bot_manager.get_bot_list(bot_type)
                 list(map(stop_bot, bot_list.values()))
             Script = 0  # Command to finish the execution of this program

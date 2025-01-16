@@ -190,11 +190,13 @@ class BotManager:
     
     def get_bot_list(self, bot_type):
         """Obtiene la lista de bots del tipo especificado."""
-        if bot_type == 'TNT':
+        
+        print(f"Received bot type: {bot_type}")
+        if bot_type == 'TNT'.casefold():
             return self.tnt_bot_list
-        elif bot_type == 'ChatAI':
+        elif bot_type == 'ChatAI'.casefold():
             return self.chat_ai_bot_list
-        elif bot_type == 'Insult':
+        elif bot_type == 'Insult'.casefold():
             return self.insult_bot_list
         else:
             raise ValueError("Invalid bot type")
