@@ -59,13 +59,7 @@ class TNT(Bot):
                 self.mc.spawnEntity(pos.x, pos.y+2, pos.z, entities.PRIMED_TNT.id)   # Spawn an ignited TNT on top of the player
 
 
-# HugChat setup
-try:
-    secrets = dotenv_values('MyAdventures/hf.env')
-    hf_email = secrets['EMAIL']
-    hf_pass = secrets['PASS']
-except Exception as e:
-    print(f"§2Error loading HugChat credentials: {e}")
+
 
 # Function for generating bot response
 def generate_response(prompt_input, email, passwd):
@@ -80,6 +74,13 @@ class ChatAI(Bot):
         super().__init__(entity)
         self.name = "ChatAI"  # Name of the bot
         self.t1 = Thread(target=self._main)  # Update thread with the function to execute
+        # HugChat setup
+        try:
+            secrets = dotenv_values('C:\\users\\stef2\\Desktop\\Minecraft-agent-framework\\MyAdventures\\hf.env')
+            self.hf_email = secrets['EMAIL']
+            self.hf_pass = secrets['PASS']
+        except Exception as e:
+            print(f"§2Error loading HugChat credentials: {e}")
 
     # Main function for the ChatAI bot (to process commands)
     def _main(self):
@@ -97,7 +98,7 @@ class ChatAI(Bot):
     # Function to handle GPT prompts
     def handle_gpt_command(self, prompt):
         try:
-            response = generate_response(prompt, hf_email, hf_pass)
+            response = generate_response(prompt, self.hf_email, self.hf_pass)
             self.mc.postToChat(f"<GPT> {response}")  # Limit response length
             #response.close();
         except Exception as e:
@@ -110,6 +111,13 @@ class Insult(Bot):
         self.t1 = Thread(target=self._main)  # Update thread with the function to execute
         self.bot_entity_id = self.t1.name
         self.player_name = self.mc.entity.getName(self.entity)
+        # HugChat setup
+        try:
+            secrets = dotenv_values('C:\\users\\stef2\\Desktop\\Minecraft-agent-framework\\MyAdventures\\hf.env')
+            self.hf_email = secrets['EMAIL']
+            self.hf_pass = secrets['PASS']
+        except Exception as e:
+            print(f"§2Error loading HugChat credentials: {e}")
 
     # Main function for the Insult bot (to process commands)
     def _main(self):
@@ -129,7 +137,7 @@ class Insult(Bot):
     # Function to handle GPT prompts
     def insult_command(self, prompt):
         try:
-            response = generate_response(prompt, hf_email, hf_pass)
+            response = generate_response(prompt, self.hf_email, self.hf_pass)
             self.mc.postToChat(f"<Insult> {response}")  # Limit response length
             #response.close();
         except Exception as e:
